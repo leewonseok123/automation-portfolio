@@ -1,0 +1,16 @@
+06:10:26 INFO    시작 — 14건, 방식: rules (regex)
+06:10:26 INFO    doc01_tax_invoice.pdf    정상        
+06:10:26 INFO    doc02_tax_invoice.pdf    대상 아님     NOT_INVOICE
+06:10:26 INFO    doc03_tax_invoice.pdf    검토 필요     MISSING, MISSING
+06:10:26 INFO    doc04_tax_invoice.pdf    대상 아님     NOT_INVOICE
+06:10:26 INFO    doc05_tax_invoice.pdf    검토 필요     MISSING, MISSING
+06:10:26 INFO    doc06_quotation.pdf      검토 필요     MISSING, MISSING, MISSING
+06:10:26 INFO    doc07_quotation.pdf      검토 필요     MISSING
+06:10:26 INFO    doc08_quotation.pdf      검토 필요     MISSING, MISSING, MISSING
+06:10:26 INFO    doc09_quotation.pdf      검토 필요     MISSING, MISSING
+06:10:26 INFO    doc10_receipt.pdf        검토 필요     MISSING, MISSING, MISSING, MISSING
+06:10:26 INFO    doc11_receipt.pdf        검토 필요     MISSING, MISSING, MISSING, MISSING
+06:10:26 INFO    doc12_receipt.pdf        검토 필요     MISSING, MISSING, MISSING, MISSING
+06:10:26 INFO    doc13_other.pdf          대상 아님     NOT_INVOICE
+06:10:26 INFO    doc14_scan.pdf           OCR 필요    NEEDS_OCR
+06:10:26 INFO    완료 — {'ok': 1, 'skipped': 3, 'review': 9, 'needs_ocr': 1} / 필드 정확도 34.9% (완전 일치 1/13) / 0.1s → /home/ubuntu/automation-portfolio/demos/05_ai_extract/output/rules

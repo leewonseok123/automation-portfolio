@@ -1,10 +1,10 @@
 # AUTOMATION LAB — Automate the Tedious
 
 > 반복 업무를 코드로 바꾸는 파이썬 자동화 포트폴리오.
-> 외주에서 가장 많이 요청되는 네 가지 유형을 **실제로 구현하고 돌려본 결과**를 공개합니다.
+> 외주에서 가장 많이 요청되는 다섯 가지 유형을 **실제로 구현하고 돌려본 결과**를 공개합니다.
 
 [![Tests](https://github.com/leewonseok123/automation-portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/leewonseok123/automation-portfolio/actions/workflows/tests.yml)
-![tests](https://img.shields.io/badge/tests-37%20passed-2f9e5b) ![python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-131311) ![lint](https://img.shields.io/badge/lint-ruff-e8442e)
+![tests](https://img.shields.io/badge/tests-62%20passed-2f9e5b) ![python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-131311) ![lint](https://img.shields.io/badge/lint-ruff-e8442e)
 
 **🔗 쇼케이스 사이트:** `https://leewonseok123.github.io/automation-portfolio/`
 
@@ -16,6 +16,7 @@
 | 02 | [가격·재고 알림봇](demos/02_price_monitor) | 가격 하락·목표가·최저가·재입고 감지 → 텔레그램 | 360회 점검 → 이벤트 45 → 알림 27 |
 | 03 | [엑셀 보고서 자동화](demos/03_excel_report) | 양식 제각각인 파일 5개 → 차트 포함 통합 보고서 | 3,132행 정제 · 74건 처리 · 1.7초 |
 | 04 | [동적 페이지 수집](demos/04_dynamic_scraper) | JS 렌더링 · 무한 스크롤 · 숨은 API 역추적 · 구조 변경 감지 | requests 0건 → 브라우저 100건 → API 2배 빠름 |
+| 05 | [AI 문서 추출기](demos/05_ai_extract) | 세금계산서·견적서·영수증 PDF → LLM 구조화 → 자동 검증 → 엑셀 | 정답지 대비 필드 정확도 측정 · 원본 오류 자동 검출 |
 
 ---
 
@@ -37,6 +38,9 @@ cd demos/03_excel_report && python make_sample_data.py && python excel_report.py
 # 04 — 동적 페이지 (최초 1회 브라우저 설치 필요)
 python -m playwright install chromium
 python demos/04_dynamic_scraper/dynamic_scraper.py
+
+# 05 — AI 문서 추출 (키 없이 규칙 기반 기준선만 / AI 는 .env 에 DEEPSEEK_API_KEY 필요)
+python demos/05_ai_extract/ai_extract.py --provider rules
 
 # 테스트 · 린트
 pip install pytest ruff && pytest && ruff check .
@@ -72,7 +76,8 @@ demos/
   02_price_monitor/   monitor.py · mock_shop.py · targets.json · output/(history.json · alerts.jsonl)
   03_excel_report/    make_sample_data.py · excel_report.py · input/ · output/매출_통합보고서.xlsx
   04_dynamic_scraper/ dynamic_scraper.py · output/(quotes.csv · rendered.png)
-tests/                pytest 37개 — 파싱 · 재시도 · 이벤트 판정 · 엑셀 검증 · 구조 변경 감지
+  05_ai_extract/      make_sample_docs.py · ai_extract.py · input/(PDF 14건 + 정답지) · output/
+tests/                pytest 62개 — 파싱 · 재시도 · 이벤트 판정 · 엑셀 검증 · 구조 변경 감지
 scripts/
   export_showcase.py  실행 결과 + 테스트 결과 → 사이트 데이터
 site/                 React 19 · Vite · Tailwind CSS 4 쇼케이스

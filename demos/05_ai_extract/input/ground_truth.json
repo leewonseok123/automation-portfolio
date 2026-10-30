@@ -1,0 +1,419 @@
+{
+  "doc01_tax_invoice.pdf": {
+    "doc_type": "tax_invoice",
+    "issue_date": "2026-07-29",
+    "supplier": {
+      "name": "다온푸드",
+      "biz_no": "969-87-97302"
+    },
+    "buyer": {
+      "name": "청솔정비소"
+    },
+    "items": [
+      {
+        "name": "사무용 의자",
+        "qty": 5,
+        "unit_price": 145000,
+        "amount": 725000
+      }
+    ],
+    "supply_amount": 725000,
+    "vat": 72500,
+    "total": 797500,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc02_tax_invoice.pdf": {
+    "doc_type": "tax_invoice",
+    "issue_date": "2026-07-12",
+    "supplier": {
+      "name": "도담문구",
+      "biz_no": "984-47-29409"
+    },
+    "buyer": {
+      "name": "(주)해오름"
+    },
+    "items": [
+      {
+        "name": "사무용 의자",
+        "qty": 10,
+        "unit_price": 145000,
+        "amount": 1450000
+      },
+      {
+        "name": "포장 박스 (대)",
+        "qty": 500,
+        "unit_price": 1200,
+        "amount": 600000
+      },
+      {
+        "name": "서버 호스팅 (월)",
+        "qty": 10,
+        "unit_price": 80000,
+        "amount": 800000
+      },
+      {
+        "name": "현수막 제작",
+        "qty": 1,
+        "unit_price": 55000,
+        "amount": 55000
+      }
+    ],
+    "supply_amount": 2905000,
+    "vat": 290500,
+    "total": 3195500,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc03_tax_invoice.pdf": {
+    "doc_type": "tax_invoice",
+    "issue_date": "2026-08-20",
+    "supplier": {
+      "name": "새벽농장",
+      "biz_no": "946-97-88094"
+    },
+    "buyer": {
+      "name": "청솔정비소"
+    },
+    "items": [
+      {
+        "name": "현수막 제작",
+        "qty": 5,
+        "unit_price": 55000,
+        "amount": 275000
+      }
+    ],
+    "supply_amount": 275000,
+    "vat": 27500,
+    "total": 312500,
+    "planted_flaw": "total_typo",
+    "scanned": false
+  },
+  "doc04_tax_invoice.pdf": {
+    "doc_type": "tax_invoice",
+    "issue_date": "2026-08-21",
+    "supplier": {
+      "name": "(주)이음테크",
+      "biz_no": "102-97-87536"
+    },
+    "buyer": {
+      "name": "햇살어린이집"
+    },
+    "items": [
+      {
+        "name": "서버 호스팅 (월)",
+        "qty": 10,
+        "unit_price": 80000,
+        "amount": 800000
+      },
+      {
+        "name": "웹사이트 유지보수",
+        "qty": 3,
+        "unit_price": 300000,
+        "amount": 900000
+      },
+      {
+        "name": "사무용 의자",
+        "qty": 10,
+        "unit_price": 145000,
+        "amount": 1450000
+      },
+      {
+        "name": "포장 박스 (대)",
+        "qty": 500,
+        "unit_price": 1200,
+        "amount": 600000
+      }
+    ],
+    "supply_amount": 3750000,
+    "vat": 375000,
+    "total": 4125000,
+    "planted_flaw": "bad_bizno",
+    "scanned": false
+  },
+  "doc05_tax_invoice.pdf": {
+    "doc_type": "tax_invoice",
+    "issue_date": "2026-09-22",
+    "supplier": {
+      "name": "다온푸드",
+      "biz_no": "575-13-62704"
+    },
+    "buyer": {
+      "name": "(주)대한메디"
+    },
+    "items": [
+      {
+        "name": "웹사이트 유지보수",
+        "qty": 3,
+        "unit_price": 300000,
+        "amount": 900000
+      },
+      {
+        "name": "현수막 제작",
+        "qty": 1,
+        "unit_price": 55000,
+        "amount": 55000
+      },
+      {
+        "name": "사무용 의자",
+        "qty": 3,
+        "unit_price": 145000,
+        "amount": 435000
+      },
+      {
+        "name": "서버 호스팅 (월)",
+        "qty": 10,
+        "unit_price": 80000,
+        "amount": 800000
+      }
+    ],
+    "supply_amount": 2220000,
+    "vat": 222000,
+    "total": 2442000,
+    "planted_flaw": "supply_typo",
+    "scanned": false
+  },
+  "doc06_quotation.pdf": {
+    "doc_type": "quotation",
+    "issue_date": "2026-09-24",
+    "supplier": {
+      "name": "(주)누리디자인",
+      "biz_no": "620-59-97286"
+    },
+    "buyer": {
+      "name": "청솔정비소"
+    },
+    "items": [
+      {
+        "name": "브로슈어 인쇄 (A4)",
+        "qty": 100,
+        "unit_price": 450,
+        "amount": 45000
+      }
+    ],
+    "supply_amount": 45000,
+    "vat": 4500,
+    "total": 49500,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc07_quotation.pdf": {
+    "doc_type": "quotation",
+    "issue_date": "2026-07-11",
+    "supplier": {
+      "name": "(주)누리디자인",
+      "biz_no": "722-94-86621"
+    },
+    "buyer": {
+      "name": "청솔정비소"
+    },
+    "items": [
+      {
+        "name": "블라인드 설치",
+        "qty": 5,
+        "unit_price": 96000,
+        "amount": 480000
+      },
+      {
+        "name": "도배 (평당)",
+        "qty": 10,
+        "unit_price": 38000,
+        "amount": 380000
+      }
+    ],
+    "supply_amount": 860000,
+    "vat": 86000,
+    "total": 946000,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc08_quotation.pdf": {
+    "doc_type": "quotation",
+    "issue_date": "2026-08-14",
+    "supplier": {
+      "name": "(주)한결소프트",
+      "biz_no": "600-87-54758"
+    },
+    "buyer": {
+      "name": "(주)가온상사"
+    },
+    "items": [
+      {
+        "name": "블라인드 설치",
+        "qty": 1,
+        "unit_price": 96000,
+        "amount": 96000
+      },
+      {
+        "name": "인테리어 철거",
+        "qty": 3,
+        "unit_price": 1200000,
+        "amount": 3600000
+      }
+    ],
+    "supply_amount": 3696000,
+    "vat": 369600,
+    "total": 4065600,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc09_quotation.pdf": {
+    "doc_type": "quotation",
+    "issue_date": "2026-07-22",
+    "supplier": {
+      "name": "보람인쇄사",
+      "biz_no": "398-36-95795"
+    },
+    "buyer": {
+      "name": "청솔정비소"
+    },
+    "items": [
+      {
+        "name": "블라인드 설치",
+        "qty": 3,
+        "unit_price": 96000,
+        "amount": 288000
+      }
+    ],
+    "supply_amount": 288000,
+    "vat": 28800,
+    "total": 316800,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc10_receipt.pdf": {
+    "doc_type": "receipt",
+    "issue_date": "2026-07-23",
+    "supplier": {
+      "name": "로스터리 연남",
+      "biz_no": "180-73-70280"
+    },
+    "buyer": null,
+    "items": [
+      {
+        "name": "아메리카노",
+        "qty": 1,
+        "unit_price": 4500,
+        "amount": 4500
+      },
+      {
+        "name": "치즈케이크",
+        "qty": 1,
+        "unit_price": 6500,
+        "amount": 6500
+      }
+    ],
+    "supply_amount": 10000,
+    "vat": 1000,
+    "total": 11000,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc11_receipt.pdf": {
+    "doc_type": "receipt",
+    "issue_date": "2026-09-07",
+    "supplier": {
+      "name": "온기 베이커리",
+      "biz_no": "716-42-52471"
+    },
+    "buyer": null,
+    "items": [
+      {
+        "name": "카페라떼",
+        "qty": 2,
+        "unit_price": 5000,
+        "amount": 10000
+      },
+      {
+        "name": "샌드위치",
+        "qty": 2,
+        "unit_price": 7200,
+        "amount": 14400
+      }
+    ],
+    "supply_amount": 22182,
+    "vat": 2218,
+    "total": 24400,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc12_receipt.pdf": {
+    "doc_type": "receipt",
+    "issue_date": "2026-09-06",
+    "supplier": {
+      "name": "로스터리 연남",
+      "biz_no": "513-30-17566"
+    },
+    "buyer": null,
+    "items": [
+      {
+        "name": "크루아상",
+        "qty": 3,
+        "unit_price": 3800,
+        "amount": 11400
+      },
+      {
+        "name": "치즈케이크",
+        "qty": 2,
+        "unit_price": 6500,
+        "amount": 13000
+      },
+      {
+        "name": "아메리카노",
+        "qty": 2,
+        "unit_price": 4500,
+        "amount": 9000
+      },
+      {
+        "name": "카페라떼",
+        "qty": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      }
+    ],
+    "supply_amount": 34910,
+    "vat": 3490,
+    "total": 38400,
+    "planted_flaw": null,
+    "scanned": false
+  },
+  "doc13_other.pdf": {
+    "doc_type": "other",
+    "issue_date": null,
+    "supplier": null,
+    "buyer": null,
+    "items": [],
+    "supply_amount": null,
+    "vat": null,
+    "total": null,
+    "planted_flaw": null
+  },
+  "doc14_scan.pdf": {
+    "doc_type": "receipt",
+    "issue_date": "2026-09-26",
+    "supplier": {
+      "name": "로스터리 연남",
+      "biz_no": "931-94-89391"
+    },
+    "buyer": null,
+    "items": [
+      {
+        "name": "아메리카노",
+        "qty": 1,
+        "unit_price": 4500,
+        "amount": 4500
+      },
+      {
+        "name": "크루아상",
+        "qty": 2,
+        "unit_price": 3800,
+        "amount": 7600
+      }
+    ],
+    "supply_amount": 11000,
+    "vat": 1100,
+    "total": 12100,
+    "planted_flaw": null,
+    "scanned": true
+  }
+}

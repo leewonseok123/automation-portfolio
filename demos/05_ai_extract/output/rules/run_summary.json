@@ -1,0 +1,594 @@
+{
+  "provider": "rules",
+  "model": "regex",
+  "docs": 14,
+  "status_counts": {
+    "ok": 1,
+    "skipped": 3,
+    "review": 9,
+    "needs_ocr": 1
+  },
+  "issues_by_code": {
+    "NOT_INVOICE": 3,
+    "MISSING": 25,
+    "NEEDS_OCR": 1
+  },
+  "tokens": {
+    "prompt": 0,
+    "completion": 0
+  },
+  "elapsed_sec": 0.08,
+  "accuracy": {
+    "docs_scored": 13,
+    "docs_perfect": 1,
+    "field_accuracy": 34.9,
+    "by_field": {
+      "doc_type": {
+        "correct": 11,
+        "total": 13
+      },
+      "issue_date": {
+        "correct": 2,
+        "total": 12
+      },
+      "supplier_name": {
+        "correct": 7,
+        "total": 12
+      },
+      "supplier_biz_no": {
+        "correct": 5,
+        "total": 12
+      },
+      "buyer_name": {
+        "correct": 10,
+        "total": 12
+      },
+      "supply_amount": {
+        "correct": 1,
+        "total": 12
+      },
+      "vat": {
+        "correct": 1,
+        "total": 12
+      },
+      "total": {
+        "correct": 1,
+        "total": 12
+      },
+      "items": {
+        "correct": 0,
+        "total": 12
+      }
+    },
+    "wrong_fields": {
+      "doc01_tax_invoice.pdf": [
+        "items"
+      ],
+      "doc02_tax_invoice.pdf": [
+        "doc_type",
+        "issue_date",
+        "supplier_name",
+        "supplier_biz_no",
+        "buyer_name",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc03_tax_invoice.pdf": [
+        "issue_date",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc04_tax_invoice.pdf": [
+        "doc_type",
+        "issue_date",
+        "supplier_name",
+        "supplier_biz_no",
+        "buyer_name",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc05_tax_invoice.pdf": [
+        "issue_date",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc06_quotation.pdf": [
+        "issue_date",
+        "supplier_biz_no",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc07_quotation.pdf": [
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc08_quotation.pdf": [
+        "issue_date",
+        "supplier_biz_no",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc09_quotation.pdf": [
+        "issue_date",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc10_receipt.pdf": [
+        "issue_date",
+        "supplier_name",
+        "supplier_biz_no",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc11_receipt.pdf": [
+        "issue_date",
+        "supplier_name",
+        "supplier_biz_no",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc12_receipt.pdf": [
+        "issue_date",
+        "supplier_name",
+        "supplier_biz_no",
+        "supply_amount",
+        "vat",
+        "total",
+        "items"
+      ],
+      "doc13_other.pdf": []
+    }
+  },
+  "results": [
+    {
+      "file": "doc01_tax_invoice.pdf",
+      "status": "ok",
+      "doc": {
+        "doc_type": "tax_invoice",
+        "issue_date": "2026-07-29",
+        "issue_date_raw": null,
+        "supplier": {
+          "name": "다온푸드",
+          "biz_no": "969-87-97302"
+        },
+        "buyer": {
+          "name": "청솔정비소"
+        },
+        "items": [],
+        "supply_amount": 725000,
+        "vat": 72500,
+        "total": 797500
+      },
+      "issues": [],
+      "error": null
+    },
+    {
+      "file": "doc02_tax_invoice.pdf",
+      "status": "skipped",
+      "doc": {
+        "doc_type": "other",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": null,
+        "buyer": null,
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "NOT_INVOICE",
+          "severity": "warn",
+          "message": "세금계산서·견적서·영수증이 아닌 문서"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc03_tax_invoice.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "tax_invoice",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": "새벽농장",
+          "biz_no": "946-97-88094"
+        },
+        "buyer": {
+          "name": "청솔정비소"
+        },
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc04_tax_invoice.pdf",
+      "status": "skipped",
+      "doc": {
+        "doc_type": "other",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": null,
+        "buyer": null,
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "NOT_INVOICE",
+          "severity": "warn",
+          "message": "세금계산서·견적서·영수증이 아닌 문서"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc05_tax_invoice.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "tax_invoice",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": "다온푸드",
+          "biz_no": "575-13-62704"
+        },
+        "buyer": {
+          "name": "(주)대한메디"
+        },
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc06_quotation.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "quotation",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": "(주)누리디자인",
+          "biz_no": null
+        },
+        "buyer": {
+          "name": "청솔정비소"
+        },
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 사업자번호를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc07_quotation.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "quotation",
+        "issue_date": "2026-07-11",
+        "issue_date_raw": null,
+        "supplier": {
+          "name": "(주)누리디자인",
+          "biz_no": "722-94-86621"
+        },
+        "buyer": {
+          "name": "청솔정비소"
+        },
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc08_quotation.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "quotation",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": "(주)한결소프트",
+          "biz_no": null
+        },
+        "buyer": {
+          "name": "(주)가온상사"
+        },
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 사업자번호를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc09_quotation.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "quotation",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": "보람인쇄사",
+          "biz_no": "398-36-95795"
+        },
+        "buyer": {
+          "name": "청솔정비소"
+        },
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc10_receipt.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "receipt",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": null,
+          "biz_no": null
+        },
+        "buyer": null,
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 상호를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 사업자번호를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc11_receipt.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "receipt",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": null,
+          "biz_no": null
+        },
+        "buyer": null,
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 상호를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 사업자번호를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc12_receipt.pdf",
+      "status": "review",
+      "doc": {
+        "doc_type": "receipt",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": {
+          "name": null,
+          "biz_no": null
+        },
+        "buyer": null,
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "일자를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "합계금액를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 상호를 찾지 못했습니다"
+        },
+        {
+          "code": "MISSING",
+          "severity": "warn",
+          "message": "공급자 사업자번호를 찾지 못했습니다"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc13_other.pdf",
+      "status": "skipped",
+      "doc": {
+        "doc_type": "other",
+        "issue_date": null,
+        "issue_date_raw": null,
+        "supplier": null,
+        "buyer": null,
+        "items": [],
+        "supply_amount": null,
+        "vat": null,
+        "total": null
+      },
+      "issues": [
+        {
+          "code": "NOT_INVOICE",
+          "severity": "warn",
+          "message": "세금계산서·견적서·영수증이 아닌 문서"
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "doc14_scan.pdf",
+      "status": "needs_ocr",
+      "doc": null,
+      "issues": [
+        {
+          "code": "NEEDS_OCR",
+          "severity": "warn",
+          "message": "글자 정보가 없는 스캔본입니다. OCR 처리 후 다시 시도하세요 (AI 호출 안 함)"
+        }
+      ],
+      "error": null
+    }
+  ]
+}
