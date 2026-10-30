@@ -1,0 +1,14 @@
+{
+  "products": 5,
+  "cycles": 72,
+  "checks": 360,
+  "messages": 27,
+  "events": 45,
+  "by_kind": {
+    "NEW_LOW": 8,
+    "PRICE_DROP": 17,
+    "RESTOCK": 8,
+    "TARGET_HIT": 12
+  },
+  "channel": "console"
+}

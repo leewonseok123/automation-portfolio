@@ -1,0 +1,1983 @@
+{
+ "scraper": {
+  "summary": {
+   "source": "https://books.toscrape.com/",
+   "pages": 3,
+   "items": 60,
+   "failed": 0,
+   "requests": 63,
+   "retries": 0,
+   "workers": 6,
+   "elapsed_sec": 16.37,
+   "categories": 25,
+   "avg_price_gbp": 35.0,
+   "finished_at": "2026-10-29T22:42:37+0000"
+  },
+  "log": [
+   "22:42:24 INFO    목록 1/3 페이지 — 링크 20개",
+   "22:42:25 INFO    목록 2/3 페이지 — 링크 20개",
+   "22:42:25 INFO    목록 3/3 페이지 — 링크 20개",
+   "22:42:28 INFO    상세 10/60 수집",
+   "22:42:29 INFO    상세 20/60 수집",
+   "22:42:31 INFO    상세 30/60 수집",
+   "22:42:33 INFO    상세 40/60 수집",
+   "22:42:35 INFO    상세 50/60 수집",
+   "22:42:37 INFO    상세 60/60 수집",
+   "22:42:37 INFO    완료 — 60건 / 실패 0 / 요청 63 / 16.4s → ./demos/01_web_scraper/output"
+  ],
+  "books": [
+   {
+    "title": "The Torch Is Passed: A Harding Family Story",
+    "category": "Add a comment",
+    "price_gbp": 19.09,
+    "rating": 1,
+    "stock": 16,
+    "upc": "4eed62cf5f8d8edf"
+   },
+   {
+    "title": "Wall and Piece",
+    "category": "Art",
+    "price_gbp": 44.18,
+    "rating": 4,
+    "stock": 18,
+    "upc": "ccd9ffa25efabdea"
+   },
+   {
+    "title": "The Dirty Little Secrets of Getting Your Dream Job",
+    "category": "Business",
+    "price_gbp": 33.34,
+    "rating": 4,
+    "stock": 19,
+    "upc": "2597b5a345f45e1b"
+   },
+   {
+    "title": "Birdsong: A Story in Pictures",
+    "category": "Childrens",
+    "price_gbp": 54.64,
+    "rating": 3,
+    "stock": 19,
+    "upc": "9528d0948525bf5f"
+   },
+   {
+    "title": "The Bear and the Piano",
+    "category": "Childrens",
+    "price_gbp": 36.89,
+    "rating": 1,
+    "stock": 18,
+    "upc": "9f6568e9c95f60b0"
+   },
+   {
+    "title": "The Secret of Dreadwillow Carse",
+    "category": "Childrens",
+    "price_gbp": 56.13,
+    "rating": 1,
+    "stock": 16,
+    "upc": "b5ea0b5dabed25a8"
+   },
+   {
+    "title": "When We Collided",
+    "category": "Contemporary",
+    "price_gbp": 31.77,
+    "rating": 1,
+    "stock": 16,
+    "upc": "3ecb690d1542c568"
+   },
+   {
+    "title": "Aladdin and His Wonderful Lamp",
+    "category": "Default",
+    "price_gbp": 53.13,
+    "rating": 3,
+    "stock": 19,
+    "upc": "904208d6aa64b655"
+   },
+   {
+    "title": "America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana",
+    "category": "Default",
+    "price_gbp": 22.5,
+    "rating": 3,
+    "stock": 19,
+    "upc": "c7d160c2c0de586f"
+   },
+   {
+    "title": "Maude (1883-1993):She Grew Up with the country",
+    "category": "Default",
+    "price_gbp": 18.02,
+    "rating": 2,
+    "stock": 18,
+    "upc": "094b269567e1c300"
+   },
+   {
+    "title": "Penny Maybe",
+    "category": "Default",
+    "price_gbp": 33.29,
+    "rating": 3,
+    "stock": 18,
+    "upc": "668fe56b17cfcd4f"
+   },
+   {
+    "title": "Starving Hearts (Triangular Trade Trilogy, #1)",
+    "category": "Default",
+    "price_gbp": 13.99,
+    "rating": 2,
+    "stock": 19,
+    "upc": "0312262ecafa5a40"
+   },
+   {
+    "title": "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+    "category": "Default",
+    "price_gbp": 22.6,
+    "rating": 4,
+    "stock": 19,
+    "upc": "e10e1e165dc8be4a"
+   },
+   {
+    "title": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+    "category": "Default",
+    "price_gbp": 17.93,
+    "rating": 3,
+    "stock": 19,
+    "upc": "e72a5dfc7e9267b2"
+   },
+   {
+    "title": "Unicorn Tracks",
+    "category": "Fantasy",
+    "price_gbp": 18.78,
+    "rating": 3,
+    "stock": 16,
+    "upc": "7ae099f3898e0209"
+   },
+   {
+    "title": "Private Paris (Private #10)",
+    "category": "Fiction",
+    "price_gbp": 47.61,
+    "rating": 5,
+    "stock": 17,
+    "upc": "b12b89017878a60d"
+   },
+   {
+    "title": "Soumission",
+    "category": "Fiction",
+    "price_gbp": 50.1,
+    "rating": 1,
+    "stock": 20,
+    "upc": "6957f44c3847a760"
+   },
+   {
+    "title": "Thirst",
+    "category": "Fiction",
+    "price_gbp": 17.27,
+    "rating": 5,
+    "stock": 16,
+    "upc": "709822d0b5bcb7f4"
+   },
+   {
+    "title": "We Love You, Charlie Freeman",
+    "category": "Fiction",
+    "price_gbp": 50.27,
+    "rating": 5,
+    "stock": 16,
+    "upc": "8d455c7539795d2a"
+   },
+   {
+    "title": "Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More",
+    "category": "Food and Drink",
+    "price_gbp": 30.52,
+    "rating": 3,
+    "stock": 19,
+    "upc": "5674a18a29a43ced"
+   },
+   {
+    "title": "The Pioneer Woman Cooks: Dinnertime: Comfort Classics, Freezer Food, 16-Minute Meals, and Other Delicious Ways to Solve Supper!",
+    "category": "Food and Drink",
+    "price_gbp": 56.41,
+    "rating": 1,
+    "stock": 16,
+    "upc": "142d767a56a9254d"
+   },
+   {
+    "title": "Tipping the Velvet",
+    "category": "Historical Fiction",
+    "price_gbp": 53.74,
+    "rating": 1,
+    "stock": 20,
+    "upc": "90fa61229261140a"
+   },
+   {
+    "title": "Sapiens: A Brief History of Humankind",
+    "category": "History",
+    "price_gbp": 54.23,
+    "rating": 5,
+    "stock": 20,
+    "upc": "4165285e1663650f"
+   },
+   {
+    "title": "Unbound: How Eight Technologies Made Us Human, Transformed Society, and Brought Our World to the Brink",
+    "category": "History",
+    "price_gbp": 25.52,
+    "rating": 1,
+    "stock": 16,
+    "upc": "9a9d6e9bc555731e"
+   },
+   {
+    "title": "How Music Works",
+    "category": "Music",
+    "price_gbp": 37.32,
+    "rating": 2,
+    "stock": 19,
+    "upc": "327f68a59745c102"
+   },
+   {
+    "title": "Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+    "category": "Music",
+    "price_gbp": 57.25,
+    "rating": 3,
+    "stock": 19,
+    "upc": "deda3e61b9514b83"
+   },
+   {
+    "title": "Rip it Up and Start Again",
+    "category": "Music",
+    "price_gbp": 35.02,
+    "rating": 5,
+    "stock": 19,
+    "upc": "a34ba96d4081e6a4"
+   },
+   {
+    "title": "In a Dark, Dark Wood",
+    "category": "Mystery",
+    "price_gbp": 19.63,
+    "rating": 1,
+    "stock": 18,
+    "upc": "19ed25f4641d5efd"
+   },
+   {
+    "title": "Sharp Objects",
+    "category": "Mystery",
+    "price_gbp": 47.82,
+    "rating": 4,
+    "stock": 20,
+    "upc": "e00eb4fd7b871a48"
+   },
+   {
+    "title": "The Past Never Ends",
+    "category": "Mystery",
+    "price_gbp": 56.5,
+    "rating": 4,
+    "stock": 16,
+    "upc": "5ee94540d0749ea0"
+   },
+   {
+    "title": "Without Borders (Wanderlove #1)",
+    "category": "New Adult",
+    "price_gbp": 45.07,
+    "rating": 2,
+    "stock": 16,
+    "upc": "acddfeab2a407640"
+   },
+   {
+    "title": "#HigherSelfie: Wake Up Your Life. Free Your Soul. Find Your Tribe.",
+    "category": "Nonfiction",
+    "price_gbp": 23.11,
+    "rating": 5,
+    "stock": 17,
+    "upc": "c27f6e1f185b0383"
+   },
+   {
+    "title": "Reasons to Stay Alive",
+    "category": "Nonfiction",
+    "price_gbp": 26.41,
+    "rating": 2,
+    "stock": 17,
+    "upc": "c8f7f0cb1abb9cac"
+   },
+   {
+    "title": "The Five Love Languages: How to Express Heartfelt Commitment to Your Mate",
+    "category": "Nonfiction",
+    "price_gbp": 31.05,
+    "rating": 3,
+    "stock": 18,
+    "upc": "3c039985229453bf"
+   },
+   {
+    "title": "Throwing Rocks at the Google Bus: How Growth Became the Enemy of Prosperity",
+    "category": "Nonfiction",
+    "price_gbp": 31.12,
+    "rating": 3,
+    "stock": 16,
+    "upc": "7858914fad68493c"
+   },
+   {
+    "title": "Unseen City: The Majesty of Pigeons, the Discreet Charm of Snails & Other Wonders of the Urban Wilderness",
+    "category": "Nonfiction",
+    "price_gbp": 44.18,
+    "rating": 4,
+    "stock": 16,
+    "upc": "d170b5a0da46380e"
+   },
+   {
+    "title": "Worlds Elsewhere: Journeys Around Shakespeare’s Globe",
+    "category": "Nonfiction",
+    "price_gbp": 40.3,
+    "rating": 5,
+    "stock": 18,
+    "upc": "4c28def39d850cdf"
+   },
+   {
+    "title": "Sophie's World",
+    "category": "Philosophy",
+    "price_gbp": 15.94,
+    "rating": 5,
+    "stock": 18,
+    "upc": "6be3beb0793a53e7"
+   },
+   {
+    "title": "A Light in the Attic",
+    "category": "Poetry",
+    "price_gbp": 51.77,
+    "rating": 3,
+    "stock": 22,
+    "upc": "a897fe39b1053632"
+   },
+   {
+    "title": "Olio",
+    "category": "Poetry",
+    "price_gbp": 23.88,
+    "rating": 1,
+    "stock": 19,
+    "upc": "feb7cc7701ecf901"
+   },
+   {
+    "title": "Shakespeare's Sonnets",
+    "category": "Poetry",
+    "price_gbp": 20.66,
+    "rating": 4,
+    "stock": 19,
+    "upc": "30a7f60cd76ca58c"
+   },
+   {
+    "title": "Slow States of Collapse: Poems",
+    "category": "Poetry",
+    "price_gbp": 57.31,
+    "rating": 3,
+    "stock": 17,
+    "upc": "b4fd5943413e089a"
+   },
+   {
+    "title": "The Black Maria",
+    "category": "Poetry",
+    "price_gbp": 52.15,
+    "rating": 1,
+    "stock": 19,
+    "upc": "1dfe412b8ac00530"
+   },
+   {
+    "title": "Untitled Collection: Sabbath Poems 2014",
+    "category": "Poetry",
+    "price_gbp": 14.27,
+    "rating": 4,
+    "stock": 16,
+    "upc": "657fe5ead67a7767"
+   },
+   {
+    "title": "You can't bury them all: Poems",
+    "category": "Poetry",
+    "price_gbp": 33.63,
+    "rating": 2,
+    "stock": 17,
+    "upc": "55f9da0c5eea2e10"
+   },
+   {
+    "title": "Libertarianism for Beginners",
+    "category": "Politics",
+    "price_gbp": 51.33,
+    "rating": 2,
+    "stock": 19,
+    "upc": "a18a4f574854aced"
+   },
+   {
+    "title": "Black Dust",
+    "category": "Romance",
+    "price_gbp": 34.53,
+    "rating": 5,
+    "stock": 19,
+    "upc": "00bfed9e18bb36f3"
+   },
+   {
+    "title": "Chase Me (Paris Nights #2)",
+    "category": "Romance",
+    "price_gbp": 25.27,
+    "rating": 5,
+    "stock": 19,
+    "upc": "c2e46a2ee3b4a322"
+   },
+   {
+    "title": "Mesaerion: The Best Science Fiction Stories 1800-1849",
+    "category": "Science Fiction",
+    "price_gbp": 37.59,
+    "rating": 1,
+    "stock": 19,
+    "upc": "e30f54cea9b38190"
+   },
+   {
+    "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+    "category": "Sequential Art",
+    "price_gbp": 52.29,
+    "rating": 5,
+    "stock": 19,
+    "upc": "3b1c02bac2a429e6"
+   },
+   {
+    "title": "This One Summer",
+    "category": "Sequential Art",
+    "price_gbp": 19.49,
+    "rating": 4,
+    "stock": 16,
+    "upc": "51653ef291ab7ddc"
+   },
+   {
+    "title": "Tsubasa: WoRLD CHRoNiCLE 2 (Tsubasa WoRLD CHRoNiCLE #2)",
+    "category": "Sequential Art",
+    "price_gbp": 16.28,
+    "rating": 1,
+    "stock": 16,
+    "upc": "09555be379ad9253"
+   },
+   {
+    "title": "The Four Agreements: A Practical Guide to Personal Freedom",
+    "category": "Spirituality",
+    "price_gbp": 17.66,
+    "rating": 5,
+    "stock": 18,
+    "upc": "6258a1f6a6dcfe50"
+   },
+   {
+    "title": "Behind Closed Doors",
+    "category": "Thriller",
+    "price_gbp": 52.22,
+    "rating": 4,
+    "stock": 18,
+    "upc": "be5cc846f45496fb"
+   },
+   {
+    "title": "In Her Wake",
+    "category": "Thriller",
+    "price_gbp": 12.84,
+    "rating": 1,
+    "stock": 19,
+    "upc": "23356462d1320d61"
+   },
+   {
+    "title": "The Elephant Tree",
+    "category": "Thriller",
+    "price_gbp": 23.82,
+    "rating": 5,
+    "stock": 18,
+    "upc": "5dada2b7be26bd03"
+   },
+   {
+    "title": "It's Only the Himalayas",
+    "category": "Travel",
+    "price_gbp": 45.17,
+    "rating": 2,
+    "stock": 19,
+    "upc": "a22124811bfa8350"
+   },
+   {
+    "title": "Set Me Free",
+    "category": "Young Adult",
+    "price_gbp": 17.46,
+    "rating": 5,
+    "stock": 19,
+    "upc": "ce6396b0f23f6ecc"
+   },
+   {
+    "title": "The Natural History of Us (The Fine Art of Pretending #2)",
+    "category": "Young Adult",
+    "price_gbp": 45.22,
+    "rating": 3,
+    "stock": 16,
+    "upc": "cedf82b5086e4691"
+   },
+   {
+    "title": "The Requiem Red",
+    "category": "Young Adult",
+    "price_gbp": 22.65,
+    "rating": 1,
+    "stock": 19,
+    "upc": "f77dbf2323deb740"
+   }
+  ]
+ },
+ "monitor": {
+  "summary": {
+   "products": 5,
+   "cycles": 72,
+   "checks": 360,
+   "messages": 27,
+   "events": 45,
+   "by_kind": {
+    "NEW_LOW": 8,
+    "PRICE_DROP": 17,
+    "RESTOCK": 8,
+    "TARGET_HIT": 12
+   },
+   "channel": "console"
+  },
+  "log": [
+   "22:42:37 INFO    데모 시작 — 상품 5개 × 72시간, 알림 채널: console",
+   "22:42:37 INFO    ALERT PRICE_DROP 📉 16.2% 하락 — 무선 청소기 X15 ₩899,000 → ₩753,500",
+   "22:42:37 INFO    ALERT PRICE_DROP+TARGET_HIT 📉 21.9% 하락 — 노이즈캔슬링 이어폰 P3 ₩329,000 → ₩256,900 / 🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩256,900 ≤ ₩270,000",
+   "22:42:37 INFO    ALERT RESTOCK 🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩256,900",
+   "22:42:37 INFO    ALERT RESTOCK 🔔 재입고 — 무선 청소기 X15 ₩753,500",
+   "22:42:37 INFO    ALERT RESTOCK 🔔 재입고 — 16인치 경량 노트북 G16 ₩1,909,200",
+   "22:42:37 INFO    ALERT NEW_LOW 🏆 역대 최저가 — 16인치 경량 노트북 G16 ₩1,824,700 (기존 ₩1,848,500)",
+   "22:42:37 INFO    ALERT PRICE_DROP+NEW_LOW+TARGET_HIT 📉 26.4% 하락 — 무선 청소기 X15 ₩881,800 → ₩649,100 / 🏆 역대 최저가 — 무선 청소기 X15 ₩649,100 (기존 ₩753,500) / 🎯 목표가 도달 — 무선 청소기 X15 ₩649,100 ≤ ₩720,000",
+   "22:42:37 INFO    ALERT PRICE_DROP+NEW_LOW+TARGET_HIT 📉 25.8% 하락 — 휴대용 게임기 S2 ₩501,800 → ₩372,100 / 🏆 역대 최저가 — 휴대용 게임기 S2 ₩372,100 (기존 ₩489,200) / 🎯 목표가 도달 — 휴대용 게임기 S2 ₩372,100 ≤ ₩420,000",
+   "22:42:37 INFO    ALERT PRICE_DROP+NEW_LOW+TARGET_HIT 📉 22.8% 하락 — 노이즈캔슬링 이어폰 P3 ₩325,000 → ₩251,000 / 🏆 역대 최저가 — 노이즈캔슬링 이어폰 P3 ₩251,000 (기존 ₩256,900) / 🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩251,000 ≤ ₩270,000",
+   "22:42:37 INFO    ALERT RESTOCK 🔔 재입고 — 16인치 경량 노트북 G16 ₩1,876,200",
+   "22:42:38 INFO    ALERT PRICE_DROP+NEW_LOW+TARGET_HIT 📉 26.5% 하락 — 노이즈캔슬링 이어폰 P3 ₩331,500 → ₩243,500 / 🏆 역대 최저가 — 노이즈캔슬링 이어폰 P3 ₩243,500 (기존 ₩251,000) / 🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩243,500 ≤ ₩270,000",
+   "22:42:38 INFO    ALERT PRICE_DROP+NEW_LOW+TARGET_HIT 📉 22.1% 하락 — 16인치 경량 노트북 G16 ₩1,854,900 → ₩1,445,700 / 🏆 역대 최저가 — 16인치 경량 노트북 G16 ₩1,445,700 (기존 ₩1,824,700) / 🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,445,700 ≤ ₩1,550,000",
+   "22:42:38 INFO    ALERT PRICE_DROP+TARGET_HIT 📉 26.7% 하락 — 무선 청소기 X15 ₩907,400 → ₩665,100 / 🎯 목표가 도달 — 무선 청소기 X15 ₩665,100 ≤ ₩720,000",
+   "22:42:38 INFO    ALERT PRICE_DROP+NEW_LOW 📉 19.0% 하락 — 무선 마우스 MX4 ₩142,800 → ₩115,600 / 🏆 역대 최저가 — 무선 마우스 MX4 ₩115,600 (기존 ₩133,500)",
+   "22:42:38 INFO    ALERT PRICE_DROP 📉 18.9% 하락 — 노이즈캔슬링 이어폰 P3 ₩337,000 → ₩273,200",
+   "22:42:38 INFO    ALERT PRICE_DROP+TARGET_HIT 📉 18.7% 하락 — 16인치 경량 노트북 G16 ₩1,820,800 → ₩1,481,100 / 🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,481,100 ≤ ₩1,550,000",
+   "22:42:38 INFO    ALERT RESTOCK 🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩273,200",
+   "22:42:38 INFO    ALERT PRICE_DROP 📉 14.3% 하락 — 노이즈캔슬링 이어폰 P3 ₩321,600 → ₩275,600",
+   "22:42:38 INFO    ALERT RESTOCK 🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩275,600",
+   "22:42:38 INFO    ALERT RESTOCK 🔔 재입고 — 16인치 경량 노트북 G16 ₩1,893,700",
+   "22:42:38 INFO    ALERT PRICE_DROP 📉 12.6% 하락 — 무선 청소기 X15 ₩867,300 → ₩758,000",
+   "22:42:38 INFO    ALERT PRICE_DROP+NEW_LOW+TARGET_HIT 📉 29.7% 하락 — 휴대용 게임기 S2 ₩511,300 → ₩359,300 / 🏆 역대 최저가 — 휴대용 게임기 S2 ₩359,300 (기존 ₩372,100) / 🎯 목표가 도달 — 휴대용 게임기 S2 ₩359,300 ≤ ₩420,000",
+   "22:42:38 INFO    ALERT PRICE_DROP+TARGET_HIT 📉 22.5% 하락 — 노이즈캔슬링 이어폰 P3 ₩318,600 → ₩247,000 / 🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩247,000 ≤ ₩270,000",
+   "22:42:38 INFO    ALERT PRICE_DROP 📉 5.3% 하락 — 16인치 경량 노트북 G16 ₩1,922,200 → ₩1,819,900",
+   "22:42:38 INFO    쿨다운으로 생략: 📉 15.8% 하락 — 16인치 경량 노트북 G16 ₩1,819,900 → ₩1,531,700",
+   "22:42:38 INFO    ALERT TARGET_HIT 🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,531,700 ≤ ₩1,550,000",
+   "22:42:38 INFO    ALERT RESTOCK 🔔 재입고 — 휴대용 게임기 S2 ₩500,200",
+   "22:42:38 INFO    ALERT PRICE_DROP+TARGET_HIT 📉 27.6% 하락 — 휴대용 게임기 S2 ₩500,200 → ₩362,300 / 🎯 목표가 도달 — 휴대용 게임기 S2 ₩362,300 ≤ ₩420,000",
+   "22:42:39 INFO    완료 — 점검 360회, 이벤트 45건 → 메시지 27건 {'NEW_LOW': 8, 'PRICE_DROP': 17, 'RESTOCK': 8, 'TARGET_HIT': 12}"
+  ],
+  "products": [
+   {
+    "id": "VC-X15",
+    "name": "무선 청소기 X15",
+    "target_price": 720000,
+    "alerts": [
+     {
+      "at": "2026-10-27T10:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 16.2% 하락 — 무선 청소기 X15 ₩899,000 → ₩753,500"
+     },
+     {
+      "at": "2026-10-27T17:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 무선 청소기 X15 ₩753,500"
+     },
+     {
+      "at": "2026-10-28T00:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 26.4% 하락 — 무선 청소기 X15 ₩881,800 → ₩649,100"
+     },
+     {
+      "at": "2026-10-28T00:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 무선 청소기 X15 ₩649,100 (기존 ₩753,500)"
+     },
+     {
+      "at": "2026-10-28T00:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 무선 청소기 X15 ₩649,100 ≤ ₩720,000"
+     },
+     {
+      "at": "2026-10-28T18:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 26.7% 하락 — 무선 청소기 X15 ₩907,400 → ₩665,100"
+     },
+     {
+      "at": "2026-10-28T18:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 무선 청소기 X15 ₩665,100 ≤ ₩720,000"
+     },
+     {
+      "at": "2026-10-29T21:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 12.6% 하락 — 무선 청소기 X15 ₩867,300 → ₩758,000"
+     }
+    ],
+    "prices": [
+     899000,
+     753500,
+     753500,
+     753500,
+     753500,
+     753500,
+     753500,
+     753500,
+     753500,
+     753500,
+     753500,
+     902700,
+     906400,
+     906400,
+     881800,
+     649100,
+     649100,
+     649100,
+     649100,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     756300,
+     907400,
+     907400,
+     665100,
+     665100,
+     665100,
+     665100,
+     898600,
+     898600,
+     898600,
+     898600,
+     898600,
+     898600,
+     898600,
+     922700,
+     901700,
+     908900,
+     908900,
+     908900,
+     908900,
+     908900,
+     882700,
+     882700,
+     882700,
+     882700,
+     910200,
+     867300,
+     867300,
+     867300,
+     867300,
+     758000,
+     758000,
+     758000,
+     758000,
+     758000,
+     758000,
+     758000,
+     758000,
+     758000,
+     880300,
+     880300,
+     913000
+    ],
+    "stock": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "start": "2026-10-27T09:00:00+09:00"
+   },
+   {
+    "id": "GM-S2",
+    "name": "휴대용 게임기 S2",
+    "target_price": 420000,
+    "alerts": [
+     {
+      "at": "2026-10-28T00:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 25.8% 하락 — 휴대용 게임기 S2 ₩501,800 → ₩372,100"
+     },
+     {
+      "at": "2026-10-28T00:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 휴대용 게임기 S2 ₩372,100 (기존 ₩489,200)"
+     },
+     {
+      "at": "2026-10-28T00:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 휴대용 게임기 S2 ₩372,100 ≤ ₩420,000"
+     },
+     {
+      "at": "2026-10-29T21:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 29.7% 하락 — 휴대용 게임기 S2 ₩511,300 → ₩359,300"
+     },
+     {
+      "at": "2026-10-29T21:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 휴대용 게임기 S2 ₩359,300 (기존 ₩372,100)"
+     },
+     {
+      "at": "2026-10-29T21:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 휴대용 게임기 S2 ₩359,300 ≤ ₩420,000"
+     },
+     {
+      "at": "2026-10-30T04:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 휴대용 게임기 S2 ₩500,200"
+     },
+     {
+      "at": "2026-10-30T05:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 27.6% 하락 — 휴대용 게임기 S2 ₩500,200 → ₩362,300"
+     },
+     {
+      "at": "2026-10-30T05:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 휴대용 게임기 S2 ₩362,300 ≤ ₩420,000"
+     }
+    ],
+    "prices": [
+     498000,
+     489200,
+     492800,
+     492800,
+     507800,
+     490000,
+     490000,
+     490000,
+     490000,
+     491300,
+     491300,
+     491300,
+     501800,
+     501800,
+     501800,
+     372100,
+     372100,
+     372100,
+     372100,
+     502300,
+     502300,
+     502500,
+     495500,
+     495500,
+     495700,
+     495700,
+     503500,
+     503500,
+     502100,
+     502100,
+     502100,
+     502100,
+     506300,
+     506300,
+     506300,
+     496300,
+     478300,
+     478300,
+     478300,
+     502100,
+     502100,
+     487900,
+     487900,
+     487900,
+     489800,
+     489800,
+     489800,
+     498500,
+     497000,
+     497000,
+     497000,
+     511300,
+     511300,
+     511300,
+     511300,
+     511300,
+     511300,
+     511300,
+     511300,
+     511300,
+     359300,
+     359300,
+     359300,
+     359300,
+     359300,
+     359300,
+     500200,
+     500200,
+     362300,
+     362300,
+     362300,
+     362300
+    ],
+    "stock": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "start": "2026-10-27T09:00:00+09:00"
+   },
+   {
+    "id": "EP-P3",
+    "name": "노이즈캔슬링 이어폰 P3",
+    "target_price": 270000,
+    "alerts": [
+     {
+      "at": "2026-10-27T11:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 21.9% 하락 — 노이즈캔슬링 이어폰 P3 ₩329,000 → ₩256,900"
+     },
+     {
+      "at": "2026-10-27T11:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩256,900 ≤ ₩270,000"
+     },
+     {
+      "at": "2026-10-27T15:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩256,900"
+     },
+     {
+      "at": "2026-10-28T03:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 22.8% 하락 — 노이즈캔슬링 이어폰 P3 ₩325,000 → ₩251,000"
+     },
+     {
+      "at": "2026-10-28T03:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 노이즈캔슬링 이어폰 P3 ₩251,000 (기존 ₩256,900)"
+     },
+     {
+      "at": "2026-10-28T03:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩251,000 ≤ ₩270,000"
+     },
+     {
+      "at": "2026-10-28T14:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 26.5% 하락 — 노이즈캔슬링 이어폰 P3 ₩331,500 → ₩243,500"
+     },
+     {
+      "at": "2026-10-28T14:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 노이즈캔슬링 이어폰 P3 ₩243,500 (기존 ₩251,000)"
+     },
+     {
+      "at": "2026-10-28T14:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩243,500 ≤ ₩270,000"
+     },
+     {
+      "at": "2026-10-29T04:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 18.9% 하락 — 노이즈캔슬링 이어폰 P3 ₩337,000 → ₩273,200"
+     },
+     {
+      "at": "2026-10-29T07:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩273,200"
+     },
+     {
+      "at": "2026-10-29T13:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 14.3% 하락 — 노이즈캔슬링 이어폰 P3 ₩321,600 → ₩275,600"
+     },
+     {
+      "at": "2026-10-29T17:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩275,600"
+     },
+     {
+      "at": "2026-10-29T23:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 22.5% 하락 — 노이즈캔슬링 이어폰 P3 ₩318,600 → ₩247,000"
+     },
+     {
+      "at": "2026-10-29T23:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩247,000 ≤ ₩270,000"
+     }
+    ],
+    "prices": [
+     329000,
+     329000,
+     256900,
+     256900,
+     256900,
+     256900,
+     256900,
+     256900,
+     256900,
+     324700,
+     324700,
+     324700,
+     324700,
+     324700,
+     325000,
+     325000,
+     325000,
+     325000,
+     251000,
+     251000,
+     251000,
+     251000,
+     251000,
+     251000,
+     251000,
+     331900,
+     331900,
+     331500,
+     331500,
+     243500,
+     243500,
+     243500,
+     243500,
+     243500,
+     243500,
+     243500,
+     243500,
+     243500,
+     243500,
+     335200,
+     335200,
+     335200,
+     337000,
+     273200,
+     273200,
+     273200,
+     273200,
+     273200,
+     273200,
+     273200,
+     336500,
+     321600,
+     275600,
+     275600,
+     275600,
+     275600,
+     275600,
+     275600,
+     275600,
+     275600,
+     318600,
+     318600,
+     247000,
+     247000,
+     247000,
+     247000,
+     247000,
+     247000,
+     247000,
+     247000,
+     247000,
+     247000
+    ],
+    "stock": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "start": "2026-10-27T09:00:00+09:00"
+   },
+   {
+    "id": "NB-G16",
+    "name": "16인치 경량 노트북 G16",
+    "target_price": 1550000,
+    "alerts": [
+     {
+      "at": "2026-10-27T21:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 16인치 경량 노트북 G16 ₩1,909,200"
+     },
+     {
+      "at": "2026-10-27T22:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 16인치 경량 노트북 G16 ₩1,824,700 (기존 ₩1,848,500)"
+     },
+     {
+      "at": "2026-10-28T06:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 16인치 경량 노트북 G16 ₩1,876,200"
+     },
+     {
+      "at": "2026-10-28T17:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 22.1% 하락 — 16인치 경량 노트북 G16 ₩1,854,900 → ₩1,445,700"
+     },
+     {
+      "at": "2026-10-28T17:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 16인치 경량 노트북 G16 ₩1,445,700 (기존 ₩1,824,700)"
+     },
+     {
+      "at": "2026-10-28T17:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,445,700 ≤ ₩1,550,000"
+     },
+     {
+      "at": "2026-10-29T05:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 18.7% 하락 — 16인치 경량 노트북 G16 ₩1,820,800 → ₩1,481,100"
+     },
+     {
+      "at": "2026-10-29T05:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,481,100 ≤ ₩1,550,000"
+     },
+     {
+      "at": "2026-10-29T20:00:00+09:00",
+      "kind": "RESTOCK",
+      "message": "🔔 재입고 — 16인치 경량 노트북 G16 ₩1,893,700"
+     },
+     {
+      "at": "2026-10-30T02:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 5.3% 하락 — 16인치 경량 노트북 G16 ₩1,922,200 → ₩1,819,900"
+     },
+     {
+      "at": "2026-10-30T03:00:00+09:00",
+      "kind": "TARGET_HIT",
+      "message": "🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,531,700 ≤ ₩1,550,000"
+     }
+    ],
+    "prices": [
+     1890000,
+     1914000,
+     1914000,
+     1914000,
+     1929400,
+     1861700,
+     1848500,
+     1848500,
+     1848500,
+     1848500,
+     1848500,
+     1848500,
+     1909200,
+     1824700,
+     1824700,
+     1824700,
+     1824700,
+     1889300,
+     1889300,
+     1889300,
+     1889300,
+     1876200,
+     1876200,
+     1876200,
+     1876200,
+     1876200,
+     1876200,
+     1868900,
+     1868900,
+     1868900,
+     1868900,
+     1854900,
+     1445700,
+     1445700,
+     1445700,
+     1445700,
+     1445700,
+     1445700,
+     1913700,
+     1913700,
+     1913700,
+     1913700,
+     1913700,
+     1820800,
+     1481100,
+     1481100,
+     1481100,
+     1481100,
+     1481100,
+     1481100,
+     1481100,
+     1861600,
+     1820100,
+     1820100,
+     1820100,
+     1835100,
+     1893700,
+     1893700,
+     1893700,
+     1893700,
+     1893700,
+     1890200,
+     1922200,
+     1922200,
+     1922200,
+     1819900,
+     1531700,
+     1531700,
+     1531700,
+     1531700,
+     1935800,
+     1935800
+    ],
+    "stock": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "start": "2026-10-27T09:00:00+09:00"
+   },
+   {
+    "id": "MS-MX4",
+    "name": "무선 마우스 MX4",
+    "target_price": 115000,
+    "alerts": [
+     {
+      "at": "2026-10-28T23:00:00+09:00",
+      "kind": "PRICE_DROP",
+      "message": "📉 19.0% 하락 — 무선 마우스 MX4 ₩142,800 → ₩115,600"
+     },
+     {
+      "at": "2026-10-28T23:00:00+09:00",
+      "kind": "NEW_LOW",
+      "message": "🏆 역대 최저가 — 무선 마우스 MX4 ₩115,600 (기존 ₩133,500)"
+     }
+    ],
+    "prices": [
+     139000,
+     139000,
+     139000,
+     135700,
+     137900,
+     138900,
+     138900,
+     138900,
+     138900,
+     137400,
+     137400,
+     133500,
+     133500,
+     133500,
+     133500,
+     133500,
+     133500,
+     138100,
+     138100,
+     138100,
+     138100,
+     138100,
+     138100,
+     138100,
+     133800,
+     133800,
+     133800,
+     136900,
+     136900,
+     140800,
+     138900,
+     136600,
+     141400,
+     141400,
+     141400,
+     141400,
+     139200,
+     142800,
+     115600,
+     115600,
+     115600,
+     115600,
+     115600,
+     115600,
+     115600,
+     135400,
+     135400,
+     135400,
+     135400,
+     134400,
+     137600,
+     137600,
+     137600,
+     138400,
+     138400,
+     141400,
+     135600,
+     135600,
+     135600,
+     140800,
+     139100,
+     139100,
+     139000,
+     139000,
+     139800,
+     141000,
+     141000,
+     141000,
+     141000,
+     138900,
+     138900,
+     138900
+    ],
+    "stock": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "start": "2026-10-27T09:00:00+09:00"
+   }
+  ],
+  "alerts": [
+   {
+    "at": "2026-10-27T10:00:00+09:00",
+    "target": "VC-X15",
+    "kinds": [
+     "PRICE_DROP"
+    ],
+    "text": "📉 16.2% 하락 — 무선 청소기 X15 ₩899,000 → ₩753,500\nhttp://127.0.0.1:8765/product/VC-X15"
+   },
+   {
+    "at": "2026-10-27T11:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "PRICE_DROP",
+     "TARGET_HIT"
+    ],
+    "text": "📉 21.9% 하락 — 노이즈캔슬링 이어폰 P3 ₩329,000 → ₩256,900\n🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩256,900 ≤ ₩270,000\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-27T15:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩256,900\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-27T17:00:00+09:00",
+    "target": "VC-X15",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 무선 청소기 X15 ₩753,500\nhttp://127.0.0.1:8765/product/VC-X15"
+   },
+   {
+    "at": "2026-10-27T21:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 16인치 경량 노트북 G16 ₩1,909,200\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-27T22:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "NEW_LOW"
+    ],
+    "text": "🏆 역대 최저가 — 16인치 경량 노트북 G16 ₩1,824,700 (기존 ₩1,848,500)\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-28T00:00:00+09:00",
+    "target": "VC-X15",
+    "kinds": [
+     "PRICE_DROP",
+     "NEW_LOW",
+     "TARGET_HIT"
+    ],
+    "text": "📉 26.4% 하락 — 무선 청소기 X15 ₩881,800 → ₩649,100\n🏆 역대 최저가 — 무선 청소기 X15 ₩649,100 (기존 ₩753,500)\n🎯 목표가 도달 — 무선 청소기 X15 ₩649,100 ≤ ₩720,000\nhttp://127.0.0.1:8765/product/VC-X15"
+   },
+   {
+    "at": "2026-10-28T00:00:00+09:00",
+    "target": "GM-S2",
+    "kinds": [
+     "PRICE_DROP",
+     "NEW_LOW",
+     "TARGET_HIT"
+    ],
+    "text": "📉 25.8% 하락 — 휴대용 게임기 S2 ₩501,800 → ₩372,100\n🏆 역대 최저가 — 휴대용 게임기 S2 ₩372,100 (기존 ₩489,200)\n🎯 목표가 도달 — 휴대용 게임기 S2 ₩372,100 ≤ ₩420,000\nhttp://127.0.0.1:8765/product/GM-S2"
+   },
+   {
+    "at": "2026-10-28T03:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "PRICE_DROP",
+     "NEW_LOW",
+     "TARGET_HIT"
+    ],
+    "text": "📉 22.8% 하락 — 노이즈캔슬링 이어폰 P3 ₩325,000 → ₩251,000\n🏆 역대 최저가 — 노이즈캔슬링 이어폰 P3 ₩251,000 (기존 ₩256,900)\n🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩251,000 ≤ ₩270,000\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-28T06:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 16인치 경량 노트북 G16 ₩1,876,200\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-28T14:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "PRICE_DROP",
+     "NEW_LOW",
+     "TARGET_HIT"
+    ],
+    "text": "📉 26.5% 하락 — 노이즈캔슬링 이어폰 P3 ₩331,500 → ₩243,500\n🏆 역대 최저가 — 노이즈캔슬링 이어폰 P3 ₩243,500 (기존 ₩251,000)\n🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩243,500 ≤ ₩270,000\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-28T17:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "PRICE_DROP",
+     "NEW_LOW",
+     "TARGET_HIT"
+    ],
+    "text": "📉 22.1% 하락 — 16인치 경량 노트북 G16 ₩1,854,900 → ₩1,445,700\n🏆 역대 최저가 — 16인치 경량 노트북 G16 ₩1,445,700 (기존 ₩1,824,700)\n🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,445,700 ≤ ₩1,550,000\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-28T18:00:00+09:00",
+    "target": "VC-X15",
+    "kinds": [
+     "PRICE_DROP",
+     "TARGET_HIT"
+    ],
+    "text": "📉 26.7% 하락 — 무선 청소기 X15 ₩907,400 → ₩665,100\n🎯 목표가 도달 — 무선 청소기 X15 ₩665,100 ≤ ₩720,000\nhttp://127.0.0.1:8765/product/VC-X15"
+   },
+   {
+    "at": "2026-10-28T23:00:00+09:00",
+    "target": "MS-MX4",
+    "kinds": [
+     "PRICE_DROP",
+     "NEW_LOW"
+    ],
+    "text": "📉 19.0% 하락 — 무선 마우스 MX4 ₩142,800 → ₩115,600\n🏆 역대 최저가 — 무선 마우스 MX4 ₩115,600 (기존 ₩133,500)\nhttp://127.0.0.1:8765/product/MS-MX4"
+   },
+   {
+    "at": "2026-10-29T04:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "PRICE_DROP"
+    ],
+    "text": "📉 18.9% 하락 — 노이즈캔슬링 이어폰 P3 ₩337,000 → ₩273,200\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-29T05:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "PRICE_DROP",
+     "TARGET_HIT"
+    ],
+    "text": "📉 18.7% 하락 — 16인치 경량 노트북 G16 ₩1,820,800 → ₩1,481,100\n🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,481,100 ≤ ₩1,550,000\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-29T07:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩273,200\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-29T13:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "PRICE_DROP"
+    ],
+    "text": "📉 14.3% 하락 — 노이즈캔슬링 이어폰 P3 ₩321,600 → ₩275,600\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-29T17:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 노이즈캔슬링 이어폰 P3 ₩275,600\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-29T20:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 16인치 경량 노트북 G16 ₩1,893,700\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-29T21:00:00+09:00",
+    "target": "VC-X15",
+    "kinds": [
+     "PRICE_DROP"
+    ],
+    "text": "📉 12.6% 하락 — 무선 청소기 X15 ₩867,300 → ₩758,000\nhttp://127.0.0.1:8765/product/VC-X15"
+   },
+   {
+    "at": "2026-10-29T21:00:00+09:00",
+    "target": "GM-S2",
+    "kinds": [
+     "PRICE_DROP",
+     "NEW_LOW",
+     "TARGET_HIT"
+    ],
+    "text": "📉 29.7% 하락 — 휴대용 게임기 S2 ₩511,300 → ₩359,300\n🏆 역대 최저가 — 휴대용 게임기 S2 ₩359,300 (기존 ₩372,100)\n🎯 목표가 도달 — 휴대용 게임기 S2 ₩359,300 ≤ ₩420,000\nhttp://127.0.0.1:8765/product/GM-S2"
+   },
+   {
+    "at": "2026-10-29T23:00:00+09:00",
+    "target": "EP-P3",
+    "kinds": [
+     "PRICE_DROP",
+     "TARGET_HIT"
+    ],
+    "text": "📉 22.5% 하락 — 노이즈캔슬링 이어폰 P3 ₩318,600 → ₩247,000\n🎯 목표가 도달 — 노이즈캔슬링 이어폰 P3 ₩247,000 ≤ ₩270,000\nhttp://127.0.0.1:8765/product/EP-P3"
+   },
+   {
+    "at": "2026-10-30T02:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "PRICE_DROP"
+    ],
+    "text": "📉 5.3% 하락 — 16인치 경량 노트북 G16 ₩1,922,200 → ₩1,819,900\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-30T03:00:00+09:00",
+    "target": "NB-G16",
+    "kinds": [
+     "TARGET_HIT"
+    ],
+    "text": "🎯 목표가 도달 — 16인치 경량 노트북 G16 ₩1,531,700 ≤ ₩1,550,000\nhttp://127.0.0.1:8765/product/NB-G16"
+   },
+   {
+    "at": "2026-10-30T04:00:00+09:00",
+    "target": "GM-S2",
+    "kinds": [
+     "RESTOCK"
+    ],
+    "text": "🔔 재입고 — 휴대용 게임기 S2 ₩500,200\nhttp://127.0.0.1:8765/product/GM-S2"
+   },
+   {
+    "at": "2026-10-30T05:00:00+09:00",
+    "target": "GM-S2",
+    "kinds": [
+     "PRICE_DROP",
+     "TARGET_HIT"
+    ],
+    "text": "📉 27.6% 하락 — 휴대용 게임기 S2 ₩500,200 → ₩362,300\n🎯 목표가 도달 — 휴대용 게임기 S2 ₩362,300 ≤ ₩420,000\nhttp://127.0.0.1:8765/product/GM-S2"
+   }
+  ]
+ },
+ "excel": {
+  "summary": {
+   "files": [
+    "강남점_3분기_매출.xlsx",
+    "부산점_POS_export.csv",
+    "성수점_3분기_매출.xlsx",
+    "판교점_3분기_매출.xlsx",
+    "홍대점_3분기_매출.xlsx"
+   ],
+   "rows_clean": 3132,
+   "issues": 74,
+   "issues_by_kind": {
+    "반품": 29,
+    "금액 불일치": 8,
+    "형식 오류로 제외": 5,
+    "빈 행 제거": 7,
+    "중복 행 제거": 25
+   },
+   "total_revenue": 170032500,
+   "total_qty": 32094,
+   "branches": [
+    {
+     "name": "성수점",
+     "revenue": 37070300
+    },
+    {
+     "name": "판교점",
+     "revenue": 36353500
+    },
+    {
+     "name": "강남점",
+     "revenue": 34843300
+    },
+    {
+     "name": "홍대점",
+     "revenue": 33557700
+    },
+    {
+     "name": "부산점",
+     "revenue": 28207700
+    }
+   ],
+   "monthly": [
+    {
+     "month": "2026-07",
+     "revenue": 56909900
+    },
+    {
+     "month": "2026-08",
+     "revenue": 57366000
+    },
+    {
+     "month": "2026-09",
+     "revenue": 55756600
+    }
+   ],
+   "products": [
+    {
+     "name": "샌드위치",
+     "revenue": 28893600,
+     "qty": 4013
+    },
+    {
+     "name": "치즈케이크",
+     "revenue": 27475500,
+     "qty": 4227
+    },
+    {
+     "name": "바닐라라떼",
+     "revenue": 22126500,
+     "qty": 4023
+    },
+    {
+     "name": "콜드브루",
+     "revenue": 19950000,
+     "qty": 3990
+    },
+    {
+     "name": "카페라떼",
+     "revenue": 19395000,
+     "qty": 3879
+    },
+    {
+     "name": "얼그레이 티",
+     "revenue": 19099200,
+     "qty": 3979
+    },
+    {
+     "name": "아메리카노",
+     "revenue": 17725500,
+     "qty": 3939
+    },
+    {
+     "name": "크루아상",
+     "revenue": 15367200,
+     "qty": 4044
+    }
+   ],
+   "weekday": [
+    {
+     "day": "월",
+     "avg": 1569084
+    },
+    {
+     "day": "화",
+     "avg": 1554738
+    },
+    {
+     "day": "수",
+     "avg": 1620807
+    },
+    {
+     "day": "목",
+     "avg": 1619892
+    },
+    {
+     "day": "금",
+     "avg": 1603200
+    },
+    {
+     "day": "토",
+     "avg": 2535907
+    },
+    {
+     "day": "일",
+     "avg": 2451115
+    }
+   ],
+   "sample_issues": [
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 143,
+     "reason": "반품 2건 — 매출에서 차감"
+    },
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 171,
+     "reason": "반품 3건 — 매출에서 차감"
+    },
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 248,
+     "reason": "금액 불일치 — 1×5,000 ≠ 50,000 (수량×단가로 보정)"
+    },
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 281,
+     "reason": "형식 오류로 제외 (날짜/숫자 해석 불가)"
+    },
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 290,
+     "reason": "빈 행 제거"
+    },
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 382,
+     "reason": "중복 행 제거 — 2026-07-06 아메리카노"
+    },
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 418,
+     "reason": "반품 1건 — 매출에서 차감"
+    },
+    {
+     "file": "강남점_3분기_매출.xlsx",
+     "row": 442,
+     "reason": "반품 1건 — 매출에서 차감"
+    }
+   ],
+   "elapsed_sec": 1.68
+  },
+  "log": [
+   "22:42:39 INFO    강남점      강남점_3분기_매출.xlsx              헤더 3행 · 유효 636행",
+   "22:42:39 INFO    부산점      부산점_POS_export.csv           헤더 1행 · 유효 622행",
+   "22:42:39 INFO    성수점      성수점_3분기_매출.xlsx              헤더 3행 · 유효 628행",
+   "22:42:39 INFO    판교점      판교점_3분기_매출.xlsx              헤더 3행 · 유효 620행",
+   "22:42:39 INFO    홍대점      홍대점_3분기_매출.xlsx              헤더 3행 · 유효 626행",
+   "22:42:41 INFO    완료 — 5개 파일 · 유효 3132행 · 정제 74건 · 총매출 ₩170,032,500 · 1.7s → ./demos/03_excel_report/output/매출_통합보고서.xlsx"
+  ]
+ }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "VC-X15",
+    "name": "무선 청소기 X15",
+    "url": "{base}/product/VC-X15",
+    "price_selector": "strong.price",
+    "stock_selector": "p.stock",
+    "out_of_stock_text": "품절",
+    "target_price": 720000,
+    "drop_pct": 5
+  },
+  {
+    "id": "GM-S2",
+    "name": "휴대용 게임기 S2",
+    "url": "{base}/product/GM-S2",
+    "price_selector": "strong.price",
+    "stock_selector": "p.stock",
+    "out_of_stock_text": "품절",
+    "target_price": 420000,
+    "drop_pct": 5
+  },
+  {
+    "id": "EP-P3",
+    "name": "노이즈캔슬링 이어폰 P3",
+    "url": "{base}/product/EP-P3",
+    "price_selector": "strong.price",
+    "stock_selector": "p.stock",
+    "out_of_stock_text": "품절",
+    "target_price": 270000,
+    "drop_pct": 5
+  },
+  {
+    "id": "NB-G16",
+    "name": "16인치 경량 노트북 G16",
+    "url": "{base}/product/NB-G16",
+    "price_selector": "strong.price",
+    "stock_selector": "p.stock",
+    "out_of_stock_text": "품절",
+    "target_price": 1550000,
+    "drop_pct": 5
+  },
+  {
+    "id": "MS-MX4",
+    "name": "무선 마우스 MX4",
+    "url": "{base}/product/MS-MX4",
+    "price_selector": "strong.price",
+    "stock_selector": "p.stock",
+    "out_of_stock_text": "품절",
+    "target_price": 115000,
+    "drop_pct": 5
+  }
+]
