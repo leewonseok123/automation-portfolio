@@ -3,10 +3,10 @@
 > 반복 업무를 코드로 바꾸는 파이썬 자동화 포트폴리오.
 > 외주에서 가장 많이 요청되는 네 가지 유형을 **실제로 구현하고 돌려본 결과**를 공개합니다.
 
-[![Tests](https://github.com/YOUR_ID/automation-portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR_ID/automation-portfolio/actions/workflows/tests.yml)
+[![Tests](https://github.com/leewonseok123/automation-portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/leewonseok123/automation-portfolio/actions/workflows/tests.yml)
 ![tests](https://img.shields.io/badge/tests-37%20passed-2f9e5b) ![python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-131311) ![lint](https://img.shields.io/badge/lint-ruff-e8442e)
 
-**🔗 쇼케이스 사이트:** `https://YOUR_ID.github.io/automation-portfolio/`
+**🔗 쇼케이스 사이트:** `https://leewonseok123.github.io/automation-portfolio/`
 
 ![hero](docs/preview-hero.jpg)
 
