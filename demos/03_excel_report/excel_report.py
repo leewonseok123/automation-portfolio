@@ -50,6 +50,7 @@ THIN = Side(style="thin", color="D5D0C6")
 
 # ───────────────────────────── 읽기 · 정규화 ─────────────────────────────
 
+
 def read_raw(path: Path) -> pd.DataFrame:
     if path.suffix.lower() == ".csv":
         for enc in ("utf-8-sig", "cp949"):
@@ -119,7 +120,9 @@ def load_branch(path: Path, issues: list[dict]) -> pd.DataFrame:
     def issue(row, reason):
         issues.append({"file": path.name, "row": int(row.source_row), "reason": reason})
 
-    blank = df[list(ALIASES)].isna().all(axis=1) | (df[list(ALIASES)].astype(str).apply(lambda c: c.str.strip()) == "").all(axis=1)
+    blank = df[list(ALIASES)].isna().all(axis=1) | (df[list(ALIASES)].astype(str).apply(lambda c: c.str.strip()) == "").all(
+        axis=1
+    )
     for _, r in df[blank].iterrows():
         issue(r, "빈 행 제거")
     df = df[~blank].copy()
@@ -152,6 +155,7 @@ def load_branch(path: Path, issues: list[dict]) -> pd.DataFrame:
 
 
 # ───────────────────────────── 보고서 스타일 ─────────────────────────────
+
 
 def style_header(ws: Worksheet, row: int, ncols: int, start_col: int = 1) -> None:
     for c in range(start_col, start_col + ncols):
@@ -199,6 +203,7 @@ def section_title(ws: Worksheet, cell: str, text: str, sub: str = "") -> None:
 
 # ───────────────────────────── 보고서 작성 ─────────────────────────────
 
+
 def build_report(df: pd.DataFrame, issues: list[dict], files: list[Path], out: Path) -> dict:
     df = df.copy()
     df["month"] = pd.to_datetime(df["date"]).dt.strftime("%Y-%m")
@@ -210,7 +215,10 @@ def build_report(df: pd.DataFrame, issues: list[dict], files: list[Path], out: P
     pivot = df.pivot_table(index="branch", columns="month", values="amount", aggfunc="sum").reindex(branch_rev.index)
     pivot["합계"] = pivot.sum(axis=1)
     products = (
-        df.groupby("product").agg(판매수량=("qty", "sum"), 매출=("amount", "sum")).sort_values("매출", ascending=False).reset_index()
+        df.groupby("product")
+        .agg(판매수량=("qty", "sum"), 매출=("amount", "sum"))
+        .sort_values("매출", ascending=False)
+        .reset_index()
     )
     products.insert(0, "순위", range(1, len(products) + 1))
     products["비중(%)"] = (products["매출"] / total * 100).round(1)
@@ -290,7 +298,9 @@ def build_report(df: pd.DataFrame, issues: list[dict], files: list[Path], out: P
     pv[pv.columns[1:]] = pv[pv.columns[1:]].astype(int)
     p_end, p_right = write_table(ws2, pv, top=4, money_cols=tuple(pv.columns[1:]))
     rng = f"B5:{get_column_letter(p_right - 1)}{p_end}"
-    ws2.conditional_formatting.add(rng, ColorScaleRule(start_type="min", start_color="FFFFFF", end_type="max", end_color="F4A595"))
+    ws2.conditional_formatting.add(
+        rng, ColorScaleRule(start_type="min", start_color="FFFFFF", end_type="max", end_color="F4A595")
+    )
     autosize(ws2, min_w=12)
 
     # ── 상품 순위 ──
@@ -323,14 +333,16 @@ def build_report(df: pd.DataFrame, issues: list[dict], files: list[Path], out: P
         row[0].number_format = "yyyy-mm-dd"
     ws4.freeze_panes = "A2"
     ws4.auto_filter.ref = f"A1:{get_column_letter(c_right)}{c_end}"
-    for col, w in zip("ABCDEF", (12, 10, 14, 8, 10, 12)):
+    for col, w in zip("ABCDEF", (12, 10, 14, 8, 10, 12), strict=True):
         ws4.column_dimensions[col].width = w
 
     # ── 검증 로그 ──
     ws5 = wb.create_sheet("검증 로그")
     ws5.sheet_view.showGridLines = False
     section_title(ws5, "A1", "데이터 검증 로그", "원본 파일의 몇 번째 행을 어떻게 처리했는지 기록합니다")
-    il = pd.DataFrame(issues or [{"file": "-", "row": 0, "reason": "이상 없음"}]).rename(columns={"file": "파일", "row": "원본 행", "reason": "처리 내용"})
+    il = pd.DataFrame(issues or [{"file": "-", "row": 0, "reason": "이상 없음"}]).rename(
+        columns={"file": "파일", "row": "원본 행", "reason": "처리 내용"}
+    )
     write_table(ws5, il, top=4)
     autosize(ws5)
 
@@ -354,7 +366,9 @@ def build_report(df: pd.DataFrame, issues: list[dict], files: list[Path], out: P
         "total_qty": qty,
         "branches": [{"name": k, "revenue": int(v)} for k, v in branch_rev.items()],
         "monthly": [{"month": k, "revenue": int(v)} for k, v in monthly.items()],
-        "products": [{"name": r["product"], "revenue": int(r["매출"]), "qty": int(r["판매수량"])} for _, r in products.iterrows()],
+        "products": [
+            {"name": r["product"], "revenue": int(r["매출"]), "qty": int(r["판매수량"])} for _, r in products.iterrows()
+        ],
         "weekday": [{"day": WEEKDAYS[i], "avg": int(v)} for i, v in weekday.items()],
         "sample_issues": issues[:8],
     }
@@ -374,7 +388,9 @@ def main() -> None:
     )
 
     started = time.perf_counter()
-    files = sorted(p for p in args.input.iterdir() if p.suffix.lower() in (".xlsx", ".xls", ".csv") and not p.name.startswith("~$"))
+    files = sorted(
+        p for p in args.input.iterdir() if p.suffix.lower() in (".xlsx", ".xls", ".csv") and not p.name.startswith("~$")
+    )
     if not files:
         raise SystemExit(f"{args.input} 에 입력 파일이 없습니다. 먼저 make_sample_data.py 를 실행하세요.")
 
@@ -393,8 +409,15 @@ def main() -> None:
     summary = build_report(df, issues, files, report)
     summary["elapsed_sec"] = round(time.perf_counter() - started, 2)
     (args.out / "run_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
-    log.info("완료 — %d개 파일 · 유효 %d행 · 정제 %d건 · 총매출 ₩%s · %.1fs → %s",
-             len(files), summary["rows_clean"], summary["issues"], f"{summary['total_revenue']:,}", summary["elapsed_sec"], report)
+    log.info(
+        "완료 — %d개 파일 · 유효 %d행 · 정제 %d건 · 총매출 ₩%s · %.1fs → %s",
+        len(files),
+        summary["rows_clean"],
+        summary["issues"],
+        f"{summary['total_revenue']:,}",
+        summary["elapsed_sec"],
+        report,
+    )
 
 
 if __name__ == "__main__":

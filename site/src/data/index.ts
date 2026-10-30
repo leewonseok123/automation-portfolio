@@ -69,6 +69,26 @@ export interface Showcase {
     };
     log: string[];
   };
+  dynamic: {
+    summary: {
+      source: string;
+      strategies: { key: string; name: string; items: number; sec: number; pages?: number; scrolls?: number; requests?: number }[];
+      endpoint: string;
+      consistent: boolean;
+      items: number;
+      speedup_api_vs_browser: number;
+      top_authors: [string, number][];
+      top_tags: [string, number][];
+    };
+    log: string[];
+  };
+  quality: {
+    tests: number;
+    failures: number;
+    seconds: number;
+    by_file: Record<string, number>;
+    python: string;
+  };
 }
 
 export const data = raw as unknown as Showcase;

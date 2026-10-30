@@ -26,6 +26,7 @@ python monitor.py --interval 600       # 10분 간격 상주 — systemd 용
 ```bash
 export TELEGRAM_BOT_TOKEN=123456:ABC...   # @BotFather 에서 발급
 export TELEGRAM_CHAT_ID=123456789
+python monitor.py --test-telegram     # 토큰·채팅 ID 확인 + 샘플 알림 1건 실제 발송
 ```
 
 토큰이 없으면 콘솔과 `output/alerts.jsonl` 로 대신 출력합니다.

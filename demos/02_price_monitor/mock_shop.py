@@ -48,9 +48,7 @@ class MockShop:
             ("NB-G16", "16인치 경량 노트북 G16", 1_890_000),
             ("MS-MX4", "무선 마우스 MX4", 139_000),
         ]
-        self.products = {
-            sku: Product(sku, name, base, rng=random.Random(f"{seed}-{sku}")) for sku, name, base in catalog
-        }
+        self.products = {sku: Product(sku, name, base, rng=random.Random(f"{seed}-{sku}")) for sku, name, base in catalog}
         self.tick_no = 0
         self._lock = threading.Lock()
 

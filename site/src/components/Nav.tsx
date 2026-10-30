@@ -6,6 +6,8 @@ const LINKS = [
   { ko: "수집기", en: "Scraper", href: "#scraper" },
   { ko: "알림봇", en: "Monitor", href: "#monitor" },
   { ko: "엑셀", en: "Excel", href: "#excel" },
+  { ko: "동적", en: "Dynamic", href: "#dynamic" },
+  { ko: "품질", en: "Quality", href: "#quality" },
   { ko: "의뢰", en: "Commission", href: "#commission" },
 ];
 
@@ -77,7 +79,7 @@ export default function Nav() {
             </span>
           </a>
 
-          <ul className="hidden items-center gap-8 md:flex">
+          <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
             {LINKS.map((link) => (
               <li key={link.en}>
                 <a href={link.href} className="group relative flex flex-col items-center" data-cursor="link">
@@ -115,7 +117,7 @@ export default function Nav() {
             </a>
             <button
               onClick={() => setMenuOpen((v) => !v)}
-              className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
+              className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-[5px] lg:hidden"
               aria-label="메뉴"
               data-cursor="link"
             >
@@ -141,11 +143,11 @@ export default function Nav() {
       </header>
 
       <div
-        className={`fixed inset-0 z-40 flex flex-col justify-center bg-ink px-8 transition-all duration-500 md:hidden ${
+        className={`fixed inset-0 z-40 flex flex-col justify-center bg-ink px-8 transition-all duration-500 lg:hidden ${
           menuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <ul className="space-y-6">
+        <ul className="space-y-5">
           {LINKS.map((link, i) => (
             <li key={link.en}>
               <a href={link.href} onClick={() => setMenuOpen(false)} className="flex items-baseline gap-4">

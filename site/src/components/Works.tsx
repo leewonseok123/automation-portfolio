@@ -59,8 +59,31 @@ function ExcelGlyph() {
   );
 }
 
+function DynamicGlyph() {
+  const st = data.dynamic.summary.strategies;
+  const max = Math.max(...st.map((s) => s.sec));
+  return (
+    <div className="flex h-full flex-col justify-center gap-4 p-8">
+      {st.map((s) => (
+        <div key={s.key} className="flex items-center gap-3">
+          <span className="w-4 font-display text-xs font-black text-bone/50">{s.key}</span>
+          <span
+            className="h-4"
+            style={{
+              width: `${Math.max(4, (s.sec / max) * 100)}%`,
+              background: s.items === 0 ? "rgba(232,68,46,.35)" : s.key === "D" ? "var(--color-vermilion)" : "rgba(242,239,233,.55)",
+            }}
+          />
+          <span className="font-mono text-[11px] text-bone/50">{s.items}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function Works() {
-  const { scraper, monitor, excel } = data;
+  const { scraper, monitor, excel, dynamic } = data;
+  const fastest = dynamic.summary.strategies.find((s) => s.key === "D");
   const WORKS = [
     {
       no: "01",
@@ -92,6 +115,16 @@ export default function Works() {
       desc: "양식이 제각각인 지점별 파일 5개를 정규화 · 검증 · 통합해 차트 포함 보고서를 1초대에 생성. 무엇을 고쳤는지 행 단위로 기록.",
       metric: `${fmt(excel.summary.rows_clean)}행 · 정제 ${excel.summary.issues}건 · ${excel.summary.elapsed_sec}s`,
     },
+    {
+      no: "04",
+      href: "#dynamic",
+      glyph: <DynamicGlyph />,
+      titleKo: "동적 페이지 수집",
+      titleEn: "JavaScript & Infinite Scroll",
+      tags: ["Playwright", "네트워크 감청", "구조 변경 감지"],
+      desc: "자바스크립트로 그려지는 페이지와 무한 스크롤을 헤드리스 브라우저로 수집하고, 숨은 JSON API 를 찾아내 브라우저 없이 더 빠르게 가져옵니다.",
+      metric: `requests 0건 → 브라우저 ${dynamic.summary.items}건 · API ${fastest?.sec}s (${dynamic.summary.speedup_api_vs_browser}× 빠름)`,
+    },
   ];
 
   return (
@@ -102,7 +135,7 @@ export default function Works() {
           label="Works"
           title="작업"
           en="Selected Works"
-          desc="외주 시장에서 가장 많이 요청되는 세 가지 유형을 실제로 구현하고 돌려봤습니다. 각 항목을 누르면 실행 결과와 동작 방식을 볼 수 있습니다."
+          desc="외주 시장에서 가장 많이 요청되는 네 가지 유형을 실제로 구현하고 돌려봤습니다. 각 항목을 누르면 실행 결과와 동작 방식을 볼 수 있습니다."
         />
 
         <ul className="divide-y divide-ink/15">

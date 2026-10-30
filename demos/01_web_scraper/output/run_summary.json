@@ -6,8 +6,8 @@
   "requests": 63,
   "retries": 0,
   "workers": 6,
-  "elapsed_sec": 16.37,
+  "elapsed_sec": 17.79,
   "categories": 25,
   "avg_price_gbp": 35.0,
-  "finished_at": "2026-10-29T22:42:37+0000"
+  "finished_at": "2026-10-30T01:21:14+0000"
 }

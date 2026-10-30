@@ -1,6 +1,6 @@
-22:42:39 INFO    강남점      강남점_3분기_매출.xlsx              헤더 3행 · 유효 636행
-22:42:39 INFO    부산점      부산점_POS_export.csv           헤더 1행 · 유효 622행
-22:42:39 INFO    성수점      성수점_3분기_매출.xlsx              헤더 3행 · 유효 628행
-22:42:39 INFO    판교점      판교점_3분기_매출.xlsx              헤더 3행 · 유효 620행
-22:42:39 INFO    홍대점      홍대점_3분기_매출.xlsx              헤더 3행 · 유효 626행
-22:42:41 INFO    완료 — 5개 파일 · 유효 3132행 · 정제 74건 · 총매출 ₩170,032,500 · 1.7s → /home/ubuntu/automation-portfolio/demos/03_excel_report/output/매출_통합보고서.xlsx
+01:21:15 INFO    강남점      강남점_3분기_매출.xlsx              헤더 3행 · 유효 636행
+01:21:15 INFO    부산점      부산점_POS_export.csv           헤더 1행 · 유효 622행
+01:21:15 INFO    성수점      성수점_3분기_매출.xlsx              헤더 3행 · 유효 628행
+01:21:15 INFO    판교점      판교점_3분기_매출.xlsx              헤더 3행 · 유효 620행
+01:21:15 INFO    홍대점      홍대점_3분기_매출.xlsx              헤더 3행 · 유효 626행
+01:21:16 INFO    완료 — 5개 파일 · 유효 3132행 · 정제 74건 · 총매출 ₩170,032,500 · 1.7s → /home/ubuntu/automation-portfolio/demos/03_excel_report/output/매출_통합보고서.xlsx

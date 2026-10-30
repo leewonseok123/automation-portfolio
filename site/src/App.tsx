@@ -1,24 +1,26 @@
 import Commission from "./components/Commission";
 import Counter from "./components/Counter";
 import Cursor from "./components/Cursor";
+import DynamicSection from "./components/DynamicSection";
 import ExcelSection from "./components/ExcelSection";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import MonitorSection from "./components/MonitorSection";
 import Nav from "./components/Nav";
+import Quality from "./components/Quality";
 import Reveal from "./components/Reveal";
 import ScraperSection from "./components/ScraperSection";
 import Works from "./components/Works";
 import { data } from "./data";
 
 export default function App() {
-  const { scraper, monitor, excel } = data;
+  const { scraper, monitor, excel, dynamic, quality } = data;
   const STATS = [
-    { value: scraper.summary.items, label: "수집한 상품 데이터", en: "Items Scraped" },
+    { value: scraper.summary.items + dynamic.summary.items, label: "수집한 데이터", en: "Items Scraped" },
     { value: monitor.summary.checks, label: "가격 점검 횟수", en: "Price Checks" },
     { value: excel.summary.rows_clean, label: "정제한 엑셀 행", en: "Rows Cleaned" },
-    { value: excel.summary.issues + monitor.summary.events, label: "자동 처리한 이벤트", en: "Auto-handled Events" },
+    { value: quality.tests, label: "통과한 테스트", en: "Tests Passing" },
   ];
 
   return (
@@ -44,7 +46,7 @@ export default function App() {
               </div>
               <div className="flex flex-col justify-end lg:col-span-3">
                 <p className="font-kr text-sm leading-relaxed text-ash">
-                  아래 숫자는 저장소의 데모 세 개를 실제로 실행해서 나온 값입니다. 코드는 모두 GitHub 에 공개되어 있습니다.
+                  아래 숫자는 저장소의 데모 네 개를 실제로 실행해서 나온 값입니다. 코드는 모두 GitHub 에 공개되어 있습니다.
                 </p>
               </div>
             </Reveal>
@@ -67,6 +69,8 @@ export default function App() {
         <ScraperSection />
         <MonitorSection />
         <ExcelSection />
+        <DynamicSection />
+        <Quality />
         <Commission />
       </main>
       <Footer />

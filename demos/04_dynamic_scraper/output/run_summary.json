@@ -1,0 +1,104 @@
+{
+  "source": "https://quotes.toscrape.com",
+  "strategies": [
+    {
+      "key": "A",
+      "name": "requests 단순 요청",
+      "items": 0,
+      "sec": 0.98
+    },
+    {
+      "key": "B",
+      "name": "브라우저 + 다음 클릭",
+      "items": 100,
+      "sec": 8.69,
+      "pages": 10
+    },
+    {
+      "key": "C",
+      "name": "브라우저 + 무한 스크롤",
+      "items": 100,
+      "sec": 6.53,
+      "scrolls": 6
+    },
+    {
+      "key": "D",
+      "name": "숨은 API 직접 호출",
+      "items": 100,
+      "sec": 3.26,
+      "requests": 10
+    }
+  ],
+  "endpoint": "https://quotes.toscrape.com/api/quotes",
+  "consistent": true,
+  "items": 100,
+  "speedup_api_vs_browser": 2.0,
+  "top_authors": [
+    [
+      "Albert Einstein",
+      10
+    ],
+    [
+      "J.K. Rowling",
+      9
+    ],
+    [
+      "Marilyn Monroe",
+      7
+    ],
+    [
+      "Dr. Seuss",
+      6
+    ],
+    [
+      "Mark Twain",
+      6
+    ],
+    [
+      "Jane Austen",
+      5
+    ]
+  ],
+  "top_tags": [
+    [
+      "love",
+      14
+    ],
+    [
+      "inspirational",
+      13
+    ],
+    [
+      "life",
+      13
+    ],
+    [
+      "humor",
+      12
+    ],
+    [
+      "books",
+      11
+    ],
+    [
+      "reading",
+      7
+    ],
+    [
+      "friendship",
+      5
+    ],
+    [
+      "friends",
+      4
+    ],
+    [
+      "truth",
+      4
+    ],
+    [
+      "simile",
+      3
+    ]
+  ]
+}

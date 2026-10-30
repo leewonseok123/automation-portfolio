@@ -37,7 +37,7 @@ HERE = Path(__file__).parent
 KST = timezone(timedelta(hours=9))
 log = logging.getLogger("monitor")
 MIN_SAMPLES_FOR_LOW = 12  # 이력이 충분히 쌓이기 전에는 "역대 최저가" 판정 보류
-NEW_LOW_MARGIN = 0.01     # 기존 최저가보다 1% 이상 낮을 때만 알림 (몇백 원 차이 소음 제거)
+NEW_LOW_MARGIN = 0.01  # 기존 최저가보다 1% 이상 낮을 때만 알림 (몇백 원 차이 소음 제거)
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS price_history (
@@ -78,6 +78,7 @@ class Snapshot:
 
 # ───────────────────────────── 수집 ─────────────────────────────
 
+
 def fetch_snapshot(target: Target, session: requests.Session) -> Snapshot:
     resp = session.get(target.url, timeout=10, headers={"User-Agent": "Mozilla/5.0 PriceMonitor/1.0"})
     resp.raise_for_status()
@@ -91,10 +92,9 @@ def fetch_snapshot(target: Target, session: requests.Session) -> Snapshot:
 
 # ───────────────────────────── 판정 ─────────────────────────────
 
+
 def detect_events(db: sqlite3.Connection, t: Target, snap: Snapshot) -> list[tuple[str, str]]:
-    prev = db.execute(
-        "SELECT price, in_stock FROM price_history WHERE target_id=? ORDER BY id DESC LIMIT 1", (t.id,)
-    ).fetchone()
+    prev = db.execute("SELECT price, in_stock FROM price_history WHERE target_id=? ORDER BY id DESC LIMIT 1", (t.id,)).fetchone()
     low, samples = db.execute(
         "SELECT MIN(price), COUNT(*) FROM price_history WHERE target_id=? AND price IS NOT NULL", (t.id,)
     ).fetchone()
@@ -117,6 +117,7 @@ def detect_events(db: sqlite3.Connection, t: Target, snap: Snapshot) -> list[tup
 
 
 # ───────────────────────────── 알림 ─────────────────────────────
+
 
 class Notifier:
     def __init__(self, cooldown: timedelta = timedelta(hours=3)) -> None:
@@ -160,11 +161,40 @@ class Notifier:
             [(target.id, k, m, now.isoformat()) for k, m in fresh],
         )
         with self.jsonl.open("a", encoding="utf-8") as f:
-            f.write(json.dumps({"at": now.isoformat(), "target": target.id, "kinds": kinds, "text": text}, ensure_ascii=False) + "\n")
+            f.write(
+                json.dumps({"at": now.isoformat(), "target": target.id, "kinds": kinds, "text": text}, ensure_ascii=False) + "\n"
+            )
         return True
 
 
+def test_telegram(notifier: Notifier) -> int:
+    """봇 토큰·채팅 ID 가 맞는지 확인하고 샘플 알림을 실제로 보냅니다."""
+    if notifier.channel != "telegram":
+        print("TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID 환경변수를 먼저 설정하세요.")
+        return 1
+    me = requests.get(f"https://api.telegram.org/bot{notifier.token}/getMe", timeout=10).json()
+    if not me.get("ok"):
+        print(f"봇 토큰 오류: {me.get('description')}")
+        return 1
+    sample = (
+        "📉 25.5% 하락 — 무선 청소기 X15 ₩899,000 → ₩669,800\n"
+        "🎯 목표가 도달 — 무선 청소기 X15 ₩669,800 ≤ ₩720,000\n"
+        "(연결 테스트 메시지)"
+    )
+    r = requests.post(
+        f"https://api.telegram.org/bot{notifier.token}/sendMessage",
+        json={"chat_id": notifier.chat_id, "text": sample},
+        timeout=10,
+    ).json()
+    if not r.get("ok"):
+        print(f"발송 실패: {r.get('description')} — 봇에게 먼저 /start 를 보냈는지, 채팅 ID 가 맞는지 확인하세요.")
+        return 1
+    print(f"@{me['result']['username']} → 채팅 {notifier.chat_id} 발송 성공")
+    return 0
+
+
 # ───────────────────────────── 실행 ─────────────────────────────
+
 
 def run_cycle(db: sqlite3.Connection, targets: list[Target], notifier: Notifier, session: requests.Session, now: datetime) -> int:
     sent = 0
@@ -200,16 +230,16 @@ def export_history(db: sqlite3.Connection, targets: list[Target], path: Path) ->
         rows = db.execute(
             "SELECT checked_at, price, in_stock FROM price_history WHERE target_id=? ORDER BY id", (t.id,)
         ).fetchall()
-        alerts = db.execute(
-            "SELECT created_at, kind, message FROM alerts WHERE target_id=? ORDER BY id", (t.id,)
-        ).fetchall()
-        data.append({
-            "id": t.id,
-            "name": t.name,
-            "target_price": t.target_price,
-            "history": [{"at": r[0], "price": r[1], "in_stock": bool(r[2])} for r in rows],
-            "alerts": [{"at": a[0], "kind": a[1], "message": a[2]} for a in alerts],
-        })
+        alerts = db.execute("SELECT created_at, kind, message FROM alerts WHERE target_id=? ORDER BY id", (t.id,)).fetchall()
+        data.append(
+            {
+                "id": t.id,
+                "name": t.name,
+                "target_price": t.target_price,
+                "history": [{"at": r[0], "price": r[1], "in_stock": bool(r[2])} for r in rows],
+                "alerts": [{"at": a[0], "kind": a[1], "message": a[2]} for a in alerts],
+            }
+        )
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
@@ -219,19 +249,27 @@ def main() -> None:
     mode.add_argument("--demo", action="store_true", help="로컬 목업 쇼핑몰로 시뮬레이션")
     mode.add_argument("--once", action="store_true", help="1회 점검 후 종료 (cron)")
     mode.add_argument("--interval", type=int, help="N초 간격 상주 실행")
+    mode.add_argument("--test-telegram", action="store_true", help="텔레그램 연결 확인용 테스트 메시지 1건 발송")
     ap.add_argument("--cycles", type=int, default=48, help="--demo 시뮬레이션 횟수 (1회 = 1시간)")
     ap.add_argument("--targets", type=Path, default=HERE / "targets.json")
     ap.add_argument("--db", type=Path, default=HERE / "output" / "prices.db")
     args = ap.parse_args()
+
+    notifier = Notifier()
+    if args.test_telegram:  # 로그·DB 를 건드리지 않는 연결 확인
+        raise SystemExit(test_telegram(notifier))
 
     args.db.parent.mkdir(parents=True, exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s %(levelname)-7s %(message)s",
         datefmt="%H:%M:%S",
-        handlers=[logging.StreamHandler(), logging.FileHandler(args.db.parent / "run.log", "w", encoding="utf-8")],
+        handlers=[
+            logging.StreamHandler(),
+            # 데모는 매번 새로 쓰고, 실제 운영(--once/--interval)은 이어서 기록
+            logging.FileHandler(args.db.parent / "run.log", "w" if args.demo else "a", encoding="utf-8"),
+        ],
     )
-    notifier = Notifier()
     session = requests.Session()
 
     if args.demo:

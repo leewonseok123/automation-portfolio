@@ -59,10 +59,10 @@ def parse_back(v) -> int:
     return v if isinstance(v, int) else int("".join(ch for ch in v if ch.isdigit()))
 
 
-def main() -> None:
+def main(out_dir: Path = INPUT) -> None:
     rng = random.Random(42)
-    INPUT.mkdir(exist_ok=True)
-    for f in INPUT.iterdir():
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for f in out_dir.iterdir():
         f.unlink()
 
     start = date(2026, 7, 1)
@@ -81,7 +81,15 @@ def main() -> None:
                 if rng.random() < 0.01:
                     qty = -rng.randint(1, 3)  # 반품
                 label = f"  {name} " if rng.random() < 0.03 else name
-                rows.append([fmt_date(d, spec["date"]), label, qty, fmt_money(price, spec["money"]), fmt_money(qty * price, spec["money"])])
+                rows.append(
+                    [
+                        fmt_date(d, spec["date"]),
+                        label,
+                        qty,
+                        fmt_money(price, spec["money"]),
+                        fmt_money(qty * price, spec["money"]),
+                    ]
+                )
         # 입력 실수: 금액 오타, 날짜 미기재
         for _ in range(rng.randint(1, 3)):
             r = rows[rng.randrange(len(rows))]
@@ -94,13 +102,13 @@ def main() -> None:
             rows.insert(rng.randrange(len(rows)), [None] * 5)
 
         if spec["fmt"] == "csv":
-            path = INPUT / f"{branch}_POS_export.csv"
+            path = out_dir / f"{branch}_POS_export.csv"
             with path.open("w", newline="", encoding="cp949") as f:
                 w = csv.writer(f)
                 w.writerow(spec["cols"])
                 w.writerows(["" if c is None else c for c in r] for r in rows)
         else:
-            path = INPUT / f"{branch}_3분기_매출.xlsx"
+            path = out_dir / f"{branch}_3분기_매출.xlsx"
             wb = Workbook()
             ws = wb.active
             ws.title = "매출"

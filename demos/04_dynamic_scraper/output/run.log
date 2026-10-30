@@ -1,0 +1,7 @@
+01:14:56 INFO    A. requests       —   0건 / 0.98s  ← HTML 에 데이터가 없음 (자바스크립트 렌더링)
+01:15:06 INFO    B. 브라우저+클릭   — 100건 / 8.69s  (10페이지, 선택자 div.quote)
+01:15:12 INFO    C. 브라우저+스크롤 — 100건 / 6.53s  (스크롤 6회, JSON 요청 11건 감청)
+01:15:12 INFO       감청한 API → https://quotes.toscrape.com/api/quotes
+01:15:15 INFO    D. API 직접 호출   — 100건 / 3.26s  (10회 요청, 브라우저 없음)
+01:15:15 INFO    검증 — B·C·D 결과 동일: 예 / 중복 제거 후 100건
+01:15:15 INFO    완료 — API 직접 호출이 브라우저 스크롤보다 2.0배 빠름 → output

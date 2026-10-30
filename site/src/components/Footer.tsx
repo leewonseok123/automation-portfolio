@@ -1,8 +1,8 @@
 import { PROFILE } from "../config";
 
 const COLUMNS = [
-  { title: "Works", links: [["웹 데이터 수집기", "#scraper"], ["가격·재고 알림봇", "#monitor"], ["엑셀 자동화", "#excel"]] },
-  { title: "Stack", links: [["Python 3.12", "#works"], ["pandas · openpyxl", "#excel"], ["SQLite · Telegram", "#monitor"]] },
+  { title: "Works", links: [["웹 데이터 수집기", "#scraper"], ["가격·재고 알림봇", "#monitor"], ["엑셀 자동화", "#excel"], ["동적 페이지 수집", "#dynamic"]] },
+  { title: "Stack", links: [["Python 3.11–3.13", "#quality"], ["Playwright · pandas", "#dynamic"], ["SQLite · Telegram", "#monitor"]] },
   { title: "Info", links: [["의뢰 안내", "#commission"], ["GitHub 저장소", PROFILE.repo]] },
 ];
 

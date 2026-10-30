@@ -91,7 +91,7 @@ class PoliteSession:
                 if attempt == self.retries:
                     raise
                 self.retry_count += 1
-                backoff = 2 ** attempt + random.random()
+                backoff = 2**attempt + random.random()
                 log.warning("retry %d/%d %s (%s) — %.1fs 대기", attempt, self.retries, url, exc, backoff)
                 time.sleep(backoff)
         raise RuntimeError("unreachable")

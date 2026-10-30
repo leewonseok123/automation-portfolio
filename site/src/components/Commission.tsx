@@ -25,10 +25,10 @@ const PLANS = [
 
 export default function Commission() {
   return (
-    <section id="commission" className="relative bg-paper py-24 sm:py-32">
+    <section id="commission" className="relative bg-bone py-24 sm:py-32">
       <div className="mx-auto max-w-[1600px] px-5 sm:px-8">
         <SectionHeader
-          no="05"
+          no="07"
           label="Commission"
           title="의뢰 안내"
           en="Work With Me"
@@ -37,7 +37,7 @@ export default function Commission() {
 
         <Reveal as="section" className="grid gap-px border border-ink/15 bg-ink/15 md:grid-cols-4">
           {PROCESS.map((p, i) => (
-            <div key={p.t} className="bg-paper p-6">
+            <div key={p.t} className="bg-bone p-6">
               <p className="font-display text-xs font-black tracking-[0.2em] text-vermilion">STEP 0{i + 1}</p>
               <p className="mt-3 text-xl font-bold text-ink">{p.t}</p>
               <p className="font-serif text-sm text-ash italic">{p.en}</p>
@@ -51,7 +51,7 @@ export default function Commission() {
             <Reveal key={p.name} delay={i * 100}>
               <div
                 className={`flex h-full flex-col border p-8 transition-transform duration-500 hover:-translate-y-1 ${
-                  p.featured ? "border-ink bg-ink text-bone" : "border-ink/20 bg-bone text-ink"
+                  p.featured ? "border-ink bg-ink text-bone" : "border-ink/20 bg-paper text-ink"
                 }`}
               >
                 <div className="flex items-baseline justify-between">

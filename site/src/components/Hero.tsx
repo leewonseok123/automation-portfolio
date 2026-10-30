@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="top" className="bg-grid relative flex min-h-[100svh] flex-col justify-end overflow-hidden bg-ink pt-[130px] text-bone">
       {/* 배경 대형 숫자 */}
       <div className="pointer-events-none absolute -top-10 right-[-4vw] font-display text-[38vw] leading-none font-black text-bone/[0.03] select-none">
-        03
+        04
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1600px] px-5 pb-16 sm:px-8">
